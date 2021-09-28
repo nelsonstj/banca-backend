@@ -1,0 +1,64 @@
+{
+  "name": "testenacdigitalmin",
+  "description": "Projeto nacional, com integração MD, com o mínimo possível de informação",
+  "quota_quantity": 0,
+  "quota_items": [{
+    "type": "1",
+    "area": "tv",
+    "value": 987654
+  }],
+  "price_list": {
+    "limit": null,
+    "fixed_price": false
+  },
+  "sponsors": [],
+  "renew_limit_date": null,
+  "commercialization_limit": null,
+  "published": false,
+  "already_published": false,
+  "holder": "AV7o8k5OW0c1zDVSp4t9",
+  "holder_changed": false,
+  "national": {
+    "type": "3",
+    "associated_to": "Break",
+    "program_initials": "aaa222",
+    "exhibition": {
+      "format": "day",
+      "start": "2017-12-01T00:00:00.000Z",
+      "duration": 24
+    },
+    "insertions": [{
+      "type": "11",
+      "value": 123456
+    }],
+    "support_media": false,
+    "gender": "43",
+    "has_digital_media": true
+  },
+  "digital_media": {
+    "sites": [],
+    "support_media": false,
+    "exhibition": {
+      "format": "day",
+      "start": null
+    },
+    "current_sponsors": [],
+    "tags": [],
+    "formats": {
+      "display": {
+        "active": false,
+        "estimated_impressions": 0,
+        "determined_impressions": 0,
+        "total_impressions": 0
+      },
+      "video": {
+        "active": false,
+        "total_views": 0
+      },
+      "content": {
+        "active": false,
+        "total_impact": 0
+      }
+    }
+  }
+}

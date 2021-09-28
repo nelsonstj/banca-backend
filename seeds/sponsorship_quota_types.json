@@ -1,0 +1,29 @@
+[
+      {
+        "area": "tv",
+        "unique": true,
+        "abbr": "tv",
+        "label": "Valor TV",
+        "priority": 0,
+        "required": true,
+        "id": "1"
+      },
+      {
+        "area": "md",
+        "unique": true,
+        "abbr": "midia_digital",
+        "label": "Valor Mídia Digital",
+        "priority": 1,
+        "required": false,
+        "id": "2"
+      },
+      {
+        "area": "tv",
+        "unique": false,
+        "abbr": "outros",
+        "label": "Outros valores",
+        "priority": 2,
+        "required": false,
+        "id": "3"
+      }
+    ]

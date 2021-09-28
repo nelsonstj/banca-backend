@@ -1,0 +1,65 @@
+{
+  "name": "testdigitalfull",
+  "quota_quantity": 5,
+  "quota_items": [{
+    "type": "6",
+    "area": "md",
+    "value": 999999
+  }, {
+    "type": "3",
+    "name": "prod internet",
+    "area": "md",
+    "value": 888888
+  }],
+  "price_list": {
+    "limit": null,
+    "fixed_price": false
+  },
+  "sponsors": [{
+    "name": "pepsi",
+    "market_category": "3"
+  }],
+  "renew_limit_date": "2017-12-11T18:00:28.643Z",
+  "commercialization_limit": "2017-11-30T18:00:00.000Z",
+  "published": false,
+  "already_published": false,
+  "holder": "AV7o8k5OW0c1zDVSp4t9",
+  "holder_changed": false,
+  "digital_media": {
+    "vertical": ["Notícias", "Geral", "Esporte", "Entretenimento"],
+    "sites": ["globo.com", "g1.com", "globoesporte.com"],
+    "support_media": true,
+    "exhibition": {
+      "format": "day",
+      "start": "2017-12-01T00:00:00.000Z",
+      "duration": 1464
+    },
+    "current_sponsors": [{
+      "name": "adidas"
+    }, {
+      "name": "sadia",
+      "market_category": "182"
+    }, {
+      "name": "rexona",
+      "market_category": "84"
+    }],
+    "tags": ["testando", "teste", "digital"],
+    "formats": {
+      "display": {
+        "active": true,
+        "estimated_impressions": 10,
+        "determined_impressions": 20,
+        "total_impressions": 30
+      },
+      "video": {
+        "active": true,
+        "total_views": 40
+      },
+      "content": {
+        "active": true,
+        "total_impact": 50
+      }
+    },
+    "isAvailable": true
+  }
+}

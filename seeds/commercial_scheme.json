@@ -1,0 +1,31 @@
+[{
+	"id": 1,
+	"index": 0,
+	"label": "Abertura",
+	"category": "exhibition"
+}, {
+	"id": 2,
+	"index": 1,
+	"label": "Encerramento",
+	"category": "exhibition"
+}, {
+	"id": 3,
+	"index": 2,
+	"label": "Comercial 30\"",
+	"category": "exhibition"
+}, {
+	"id": 4,
+	"index": 3,
+	"label": "Vinheta Passagem",
+	"category": "exhibition"
+}, {
+	"id": 5,
+	"index": 4,
+	"label": "Inserts",
+	"category": "exhibition"
+}, {
+	"id": 6,
+	"index": 5,
+	"label": "Chamada",
+	"category": "month"
+}]

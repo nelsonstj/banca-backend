@@ -1,0 +1,1274 @@
+[
+  {
+    "label": "ABSORVENTES HIGIENICOS",
+    "visibility": true
+  },
+  {
+    "label": "ACESS E EQUIP ELETRONICOS",
+    "visibility": true
+  },
+  {
+    "label": "ACESS E EQUIP INFORMATICA",
+    "visibility": true
+  },
+  {
+    "label": "ACESS E EQUIP TELEFONICOS",
+    "visibility": true
+  },
+  {
+    "label": "ACESSORIOS ADULTO",
+    "visibility": true
+  },
+  {
+    "label": "ACESSORIOS INFANTIL",
+    "visibility": true
+  },
+  {
+    "label": "ACESSORIOS PARA VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "ACUCARES E ADOCANTES",
+    "visibility": true
+  },
+  {
+    "label": "ADITIVOS PARA O LEITE",
+    "visibility": true
+  },
+  {
+    "label": "AGROPECUARIA OUTROS",
+    "visibility": true
+  },
+  {
+    "label": "AGUA MINERAL",
+    "visibility": true
+  },
+  {
+    "label": "AGUARDENTES",
+    "visibility": true
+  },
+  {
+    "label": "ALBUNS E FIGURINHAS",
+    "visibility": true
+  },
+  {
+    "label": "ALCOOLICOS DESTILADOS",
+    "visibility": true
+  },
+  {
+    "label": "ALIMENTOS INFANTIS",
+    "visibility": true
+  },
+  {
+    "label": "ART E EQUIPAMENTOS ESPORTIVOS",
+    "visibility": true
+  },
+  {
+    "label": "ARTIGOS JARDIM PISCINA E PRAIA",
+    "visibility": true
+  },
+  {
+    "label": "ARTIGOS PAPELARIA E ESCRITORIO",
+    "visibility": true
+  },
+  {
+    "label": "ASSOCIACAO COOP AGROPECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "ASSOCIACOES DE CLASSE",
+    "visibility": true
+  },
+  {
+    "label": "AUTO REVENDAS CONCESSIONARIAS",
+    "visibility": true
+  },
+  {
+    "label": "AVIOES HELICOPTEROS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "BALAS DROPS E GOMA DE MASCAR",
+    "visibility": true
+  },
+  {
+    "label": "BARCOS MOTORES E ACES NAUTICOS",
+    "visibility": true
+  },
+  {
+    "label": "BARES CASAS NOTURNAS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "BEBIDAS CALMANTES",
+    "visibility": true
+  },
+  {
+    "label": "BEBIDAS ENERGETICAS",
+    "visibility": true
+  },
+  {
+    "label": "BENEFICIOS TRABALHADOR",
+    "visibility": true
+  },
+  {
+    "label": "BICICLETAS TRICICLOS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "BISCOITOS E BOLACHAS",
+    "visibility": true
+  },
+  {
+    "label": "BONECAS E ACESSORIOS DE BONECA",
+    "visibility": true
+  },
+  {
+    "label": "CAFE E CHA",
+    "visibility": true
+  },
+  {
+    "label": "CALCADOS ADULTO",
+    "visibility": true
+  },
+  {
+    "label": "CALCADOS ESPORTIVOS",
+    "visibility": true
+  },
+  {
+    "label": "CALCADOS INFANTIL",
+    "visibility": true
+  },
+  {
+    "label": "CAMA MESA E BANHO",
+    "visibility": true
+  },
+  {
+    "label": "CAMPANHAS BENEFICENTES SOCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "CAMPANHAS PARTIDARIAS",
+    "visibility": true
+  },
+  {
+    "label": "CAMPANHAS PUBLICAS",
+    "visibility": true
+  },
+  {
+    "label": "CARNES AVES E DERIVADOS",
+    "visibility": true
+  },
+  {
+    "label": "CARNETS E CARTELAS",
+    "visibility": true
+  },
+  {
+    "label": "CARPETES E TAPETES",
+    "visibility": true
+  },
+  {
+    "label": "CARTOES DE CREDITO E DEBITO",
+    "visibility": true
+  },
+  {
+    "label": "CASAS DE JOGO BINGOS CASSINOS",
+    "visibility": true
+  },
+  {
+    "label": "CENTROS COMERCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "CEREAIS E FARINACEOS",
+    "visibility": true
+  },
+  {
+    "label": "CEREAIS EM BARRA",
+    "visibility": true
+  },
+  {
+    "label": "CEREAIS MATINAIS",
+    "visibility": true
+  },
+  {
+    "label": "CERVEJAS",
+    "visibility": true
+  },
+  {
+    "label": "CHOCOLATES",
+    "visibility": true
+  },
+  {
+    "label": "CLUBES LOCAIS PRATICA ESPORTE",
+    "visibility": true
+  },
+  {
+    "label": "COLCHOES E TRAVESSEIROS",
+    "visibility": true
+  },
+  {
+    "label": "COLONIAS E PERFUMES",
+    "visibility": true
+  },
+  {
+    "label": "COM ALIMENTARES E BEBIDAS",
+    "visibility": true
+  },
+  {
+    "label": "COM EL ELETR E ART E EQ INFORM",
+    "visibility": true
+  },
+  {
+    "label": "COM EQUIP ARTIGOS AGROPECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "COM EQUIP ARTIGOS PET",
+    "visibility": true
+  },
+  {
+    "label": "COM MAT CONSTRUCAO ACABAMENTO",
+    "visibility": true
+  },
+  {
+    "label": "COM MATERIAL ESPORTIVO",
+    "visibility": true
+  },
+  {
+    "label": "COM PAPELARIA LIVROS DISCOS",
+    "visibility": true
+  },
+  {
+    "label": "COM PRODS E ACESS VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "COM PRODS E ARTIGOS INFANTIS",
+    "visibility": true
+  },
+  {
+    "label": "COM PRODS USO PESSOAL",
+    "visibility": true
+  },
+  {
+    "label": "COM PRODUTOS CASA E DECORACAO",
+    "visibility": true
+  },
+  {
+    "label": "COM PRODUTOS FARMACEUTICOS",
+    "visibility": true
+  },
+  {
+    "label": "COM VEICULOS E ACESS NAUTICA",
+    "visibility": true
+  },
+  {
+    "label": "COM VESTUARIO CALCADOS E ACESS",
+    "visibility": true
+  },
+  {
+    "label": "COMBUSTIVEIS E LUBRIFICANTES",
+    "visibility": true
+  },
+  {
+    "label": "COMPRA COLETIVA",
+    "visibility": true
+  },
+  {
+    "label": "CONDIMENTOS",
+    "visibility": true
+  },
+  {
+    "label": "CONGRESSOS SEMINARIOS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "CONSTRUCAO E INCORPORACAO",
+    "visibility": true
+  },
+  {
+    "label": "CONSTRUCAO ESPECIAL",
+    "visibility": true
+  },
+  {
+    "label": "CORPORATIVA ELETROS E INFO",
+    "visibility": true
+  },
+  {
+    "label": "CORPORATIVA VESTUARIO E ACES",
+    "visibility": true
+  },
+  {
+    "label": "CORRETORAS SEGUROS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "CORTINAS E PERSIANAS",
+    "visibility": true
+  },
+  {
+    "label": "CREDITOS",
+    "visibility": true
+  },
+  {
+    "label": "CRIACAO ANIMAIS PRODUCAO",
+    "visibility": true
+  },
+  {
+    "label": "DECORACAO DE PAREDES",
+    "visibility": true
+  },
+  {
+    "label": "DEFENSIVO AGRICOLA",
+    "visibility": true
+  },
+  {
+    "label": "DERIVADOS DE TOMATE",
+    "visibility": true
+  },
+  {
+    "label": "DESCARTAVEIS USO DOMESTICO",
+    "visibility": true
+  },
+  {
+    "label": "DESODORANTES",
+    "visibility": true
+  },
+  {
+    "label": "DESTINACOES TURISMO E CAMPINGS",
+    "visibility": true
+  },
+  {
+    "label": "DIVERSOS MERCADO FINANCEIRO",
+    "visibility": true
+  },
+  {
+    "label": "DOCES E SOBREMESAS",
+    "visibility": true
+  },
+  {
+    "label": "EDITORAS E PUBLICACOES",
+    "visibility": true
+  },
+  {
+    "label": "ELETRODOMESTICOS",
+    "visibility": true
+  },
+  {
+    "label": "ELETROPORTATEIS BELEZA",
+    "visibility": true
+  },
+  {
+    "label": "ELETROPORTATEIS CASA",
+    "visibility": true
+  },
+  {
+    "label": "EMPRESAS PUBLICAS E OU CONCESS",
+    "visibility": true
+  },
+  {
+    "label": "ENLATADOS E CONSERVAS",
+    "visibility": true
+  },
+  {
+    "label": "ENSINO ESCOLAR E UNIVERSITARIO",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO CARGA E TRANSPORTE",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO E ACES SOM AUTO",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO E MAT CONSTRUCAO",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO ESCRITORIO",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO RESIDENCIAL",
+    "visibility": true
+  },
+  {
+    "label": "EQUIPAMENTO SEGURANCA",
+    "visibility": true
+  },
+  {
+    "label": "EVENTOS ESPORTIVOS",
+    "visibility": true
+  },
+  {
+    "label": "EVENTOS SOCIAIS E CULTURAIS",
+    "visibility": true
+  },
+  {
+    "label": "EXCURSOES E VIAGENS",
+    "visibility": true
+  },
+  {
+    "label": "EXIBIDORAS",
+    "visibility": true
+  },
+  {
+    "label": "FARMACIAS E DROGARIAS",
+    "visibility": true
+  },
+  {
+    "label": "FEIRAS COMERCIAIS E LEILOES",
+    "visibility": true
+  },
+  {
+    "label": "FERRAMENTAS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "FIGURAS DE ACAO E ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "FOTO E FILMAGEM",
+    "visibility": true
+  },
+  {
+    "label": "FRALDAS EM GERAL",
+    "visibility": true
+  },
+  {
+    "label": "GAMES E ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "GRAV FONOGRAFICAS E ESTUDIOS",
+    "visibility": true
+  },
+  {
+    "label": "HIGIENE BUCAL",
+    "visibility": true
+  },
+  {
+    "label": "HIGIENE DOS PES",
+    "visibility": true
+  },
+  {
+    "label": "HIGIENE E BELEZA CAPILAR",
+    "visibility": true
+  },
+  {
+    "label": "HIGIENE INTIMA",
+    "visibility": true
+  },
+  {
+    "label": "HOME CENTER",
+    "visibility": true
+  },
+  {
+    "label": "HORTICULTURA",
+    "visibility": true
+  },
+  {
+    "label": "HOTEIS MOTEIS E POUSADAS",
+    "visibility": true
+  },
+  {
+    "label": "ILUMINACAO RESIDENCIAL",
+    "visibility": true
+  },
+  {
+    "label": "INFORMATICA",
+    "visibility": true
+  },
+  {
+    "label": "INSETICIDAS DOMESTICOS",
+    "visibility": true
+  },
+  {
+    "label": "INST PETROLEIRO E COMBUSTIVEIS",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC AGROPECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC ALIMENTACAO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC BEBIDAS",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC BENS INDUSTRIAIS",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC BRINQUEDOS E ACESSOR",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC CASA E DECORACAO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC COMERCIO VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC CONSTRUCAO ACABAMENTO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC CULTURA LAZER ESP TUR",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC ESCRITORIO PAPELARIA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC FARMACEUTICA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC HIG PESSOAL E BELEZA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC HIGIENE DOMESTICA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC MERCADO FINANCEIRO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC MERCADO IMOBILIARIO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC MIDIA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC SERVICOS CONSUMIDOR",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC SORTEIOS LOTERIAS",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUC VEICULOS PECAS E ACES",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUCIONAL ELETROS E INFO",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUCIONAL TELECOM CORP",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUCIONAL TELECOM FISICA",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUCIONAL TELECOM FIXA MOV",
+    "visibility": true
+  },
+  {
+    "label": "INSTITUCIONAL VESTUARIO E ACES",
+    "visibility": true
+  },
+  {
+    "label": "INSTRUMENTOS MUSICAIS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "INSUMOS PRODUTOS AGRICOLAS",
+    "visibility": true
+  },
+  {
+    "label": "INVESTIMENTOS",
+    "visibility": true
+  },
+  {
+    "label": "IOGURTES",
+    "visibility": true
+  },
+  {
+    "label": "JOGOS E QUEBRA CABECAS",
+    "visibility": true
+  },
+  {
+    "label": "LEILAO ANIMAL CRIACAO",
+    "visibility": true
+  },
+  {
+    "label": "LEITES PUROS E ADITIVADOS",
+    "visibility": true
+  },
+  {
+    "label": "LIMPEZA DE LOUCAS",
+    "visibility": true
+  },
+  {
+    "label": "LIMPEZA DE PISOS",
+    "visibility": true
+  },
+  {
+    "label": "LIMPEZA DE VESTUARIO",
+    "visibility": true
+  },
+  {
+    "label": "LIMPEZA EM GERAL",
+    "visibility": true
+  },
+  {
+    "label": "LINHA AGROPECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "LINHA ALIMENTARES",
+    "visibility": true
+  },
+  {
+    "label": "LINHA BEBIDAS",
+    "visibility": true
+  },
+  {
+    "label": "LINHA BRINQUEDOS E ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "LINHA CASA E DECORACAO",
+    "visibility": true
+  },
+  {
+    "label": "LINHA DE BENS INDUSTRIAIS",
+    "visibility": true
+  },
+  {
+    "label": "LINHA ESCRITORIO PAPELARIA",
+    "visibility": true
+  },
+  {
+    "label": "LINHA FARMACEUTICA",
+    "visibility": true
+  },
+  {
+    "label": "LINHA HIGIENE DOMESTICA",
+    "visibility": true
+  },
+  {
+    "label": "LINHA HIGIENE PESSOAL E BELEZA",
+    "visibility": true
+  },
+  {
+    "label": "LINHA PECAS ACESSORIO VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "LINHA TELECOMUNICACOES",
+    "visibility": true
+  },
+  {
+    "label": "LINHA VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "LINHA VEICULOS VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "LOCACOES",
+    "visibility": true
+  },
+  {
+    "label": "LOJAS DE CONVENIENCIA",
+    "visibility": true
+  },
+  {
+    "label": "LOJAS DE DEPARTAMENTO",
+    "visibility": true
+  },
+  {
+    "label": "LOTEAMENTOS EM GERAL",
+    "visibility": true
+  },
+  {
+    "label": "LOTERIAS",
+    "visibility": true
+  },
+  {
+    "label": "MANUTENCAO E REPAROS",
+    "visibility": true
+  },
+  {
+    "label": "MAQUIAGEM",
+    "visibility": true
+  },
+  {
+    "label": "MAQUINAS E EQUIPS INDUSTRIAIS",
+    "visibility": true
+  },
+  {
+    "label": "MARGARINAS E MANTEIGAS",
+    "visibility": true
+  },
+  {
+    "label": "MASSAS ALIMENTICIAS E REFRIGER",
+    "visibility": true
+  },
+  {
+    "label": "MATERIAIS E EQUIPS ELETRICOS",
+    "visibility": true
+  },
+  {
+    "label": "MATERIAL HIDRAULICO SANITARIO",
+    "visibility": true
+  },
+  {
+    "label": "MATERIAS PRIMAS",
+    "visibility": true
+  },
+  {
+    "label": "MEDICAMENTO APARELHO DIGESTIVO",
+    "visibility": true
+  },
+  {
+    "label": "MEDICAMENTO DORES EM GERAL",
+    "visibility": true
+  },
+  {
+    "label": "MEDICAMENTO GRIPE E RESFRIADO",
+    "visibility": true
+  },
+  {
+    "label": "MEDICAMENTO PECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "MEDICAMENTO TRATAMENTO PELE",
+    "visibility": true
+  },
+  {
+    "label": "METALURGIA E SIDERURGIA",
+    "visibility": true
+  },
+  {
+    "label": "MIDIA ELETRONICA",
+    "visibility": true
+  },
+  {
+    "label": "MIDIA IMPRESSA",
+    "visibility": true
+  },
+  {
+    "label": "MIDIA ONLINE",
+    "visibility": true
+  },
+  {
+    "label": "MOLHOS",
+    "visibility": true
+  },
+  {
+    "label": "MOTO REVENDAS CONCESSIONARIAS",
+    "visibility": true
+  },
+  {
+    "label": "MOTOCICLETAS E CICLOMOT VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "MOTOCICLETAS E CICLOMOTORES",
+    "visibility": true
+  },
+  {
+    "label": "MOVEIS COMERCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "MOVEIS RESIDENCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "MULTI CATEGORIAS",
+    "visibility": true
+  },
+  {
+    "label": "MUSEUS E CENTROS CULTURAIS",
+    "visibility": true
+  },
+  {
+    "label": "OLEOS AZEITES E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "OTICA",
+    "visibility": true
+  },
+  {
+    "label": "OUTRAS BEBIDAS ALCOOLICAS",
+    "visibility": true
+  },
+  {
+    "label": "OUTRAS INDUSTRIAS",
+    "visibility": true
+  },
+  {
+    "label": "OUTRAS LOJAS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS ALIMENTACAO",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS ARTIGOS ACABAMENTO",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS BEBIDAS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS BRINQUEDOS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS CULTURA E LAZER",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS ESCRITORIO E PAPELARIA",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS FARMACEUTICA",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS HIGIENE DOMESTICA",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS HIGIENE PESSOAL E BELEZ",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS MATERIAIS CONSTRUCAO",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS MEDICAMENTOS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS MERCADO IMOBILIARIO",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS MOVEIS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS ODONTOLOGIA",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS SERV PUBLICOS E SOCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS SERVICOS CONSUMIDOR",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS TIPOS DE COMERCIO",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "OUTROS VESTUARIOS E ACESS",
+    "visibility": true
+  },
+  {
+    "label": "PANIFICACAO E CONFEITARIA",
+    "visibility": true
+  },
+  {
+    "label": "PAPEL E CELULOSE",
+    "visibility": true
+  },
+  {
+    "label": "PARQUES CIRCOS E CENTROS LAZER",
+    "visibility": true
+  },
+  {
+    "label": "PECAS PARA VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "PELUCIA",
+    "visibility": true
+  },
+  {
+    "label": "PET ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "PET ALIMENTACAO",
+    "visibility": true
+  },
+  {
+    "label": "PET HIGIENE",
+    "visibility": true
+  },
+  {
+    "label": "PET INSTITUCIONAL",
+    "visibility": true
+  },
+  {
+    "label": "PET SERVICOS E CRIACAO",
+    "visibility": true
+  },
+  {
+    "label": "PET VETERINARIA",
+    "visibility": true
+  },
+  {
+    "label": "PNEUS",
+    "visibility": true
+  },
+  {
+    "label": "PRIMEIRA INFANCIA PRE ESCOLAR",
+    "visibility": true
+  },
+  {
+    "label": "PROD CINEMATOGRAFICAS ESTUDIOS",
+    "visibility": true
+  },
+  {
+    "label": "PRODS A BASE DE COCO",
+    "visibility": true
+  },
+  {
+    "label": "PRODS BARBA E DEPILACAO",
+    "visibility": true
+  },
+  {
+    "label": "PRODS BRONZEAMENTO PROT SOLAR",
+    "visibility": true
+  },
+  {
+    "label": "PRODS CONSERVACAO VEICULOS",
+    "visibility": true
+  },
+  {
+    "label": "PRODS ORTOPEDICOS TERAPEUTICOS",
+    "visibility": true
+  },
+  {
+    "label": "PRODS PARA EMAGRECIMENTO",
+    "visibility": true
+  },
+  {
+    "label": "PRODS PARA MANICURE E PEDICURE",
+    "visibility": true
+  },
+  {
+    "label": "PRODS PARA PRONTO SOCORRO",
+    "visibility": true
+  },
+  {
+    "label": "PRODUTOS SECURITARIOS",
+    "visibility": true
+  },
+  {
+    "label": "PROPAGANDA E PUBLICIDADE",
+    "visibility": true
+  },
+  {
+    "label": "QUEIJOS",
+    "visibility": true
+  },
+  {
+    "label": "RACOES PECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "REF PRONTAS E SEMI PRONTAS",
+    "visibility": true
+  },
+  {
+    "label": "REFEICOES RAPIDAS",
+    "visibility": true
+  },
+  {
+    "label": "REFRESCOS",
+    "visibility": true
+  },
+  {
+    "label": "REFRIGERANTES",
+    "visibility": true
+  },
+  {
+    "label": "RESTAURANTES E LANCHONETES",
+    "visibility": true
+  },
+  {
+    "label": "REVESTIMENTO PISOS E PAREDES",
+    "visibility": true
+  },
+  {
+    "label": "RODAS E ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "SABONETES E ESPUMAS BANHO",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS AUTOMOTIVOS E AFINS",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS BANCARIOS",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS BELEZA",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS COMBUSTIVEIS",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS DE ALIMENTACAO",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS EDUCACAO COMPLEMENTAR",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS POR TELEFONE",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS RELIGIOSOS",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS SAUDE",
+    "visibility": true
+  },
+  {
+    "label": "SERVICOS SEGURANCA",
+    "visibility": true
+  },
+  {
+    "label": "SHAMPOO E CONDICIONADOR",
+    "visibility": true
+  },
+  {
+    "label": "SNACKS E SALGADINHOS",
+    "visibility": true
+  },
+  {
+    "label": "SOFTWARES SISTEMAS E SOLUCOES",
+    "visibility": true
+  },
+  {
+    "label": "SOPAS",
+    "visibility": true
+  },
+  {
+    "label": "SORVETES",
+    "visibility": true
+  },
+  {
+    "label": "SUCOS",
+    "visibility": true
+  },
+  {
+    "label": "SUPER HIPERMERCADOS ATACADISTA",
+    "visibility": true
+  },
+  {
+    "label": "TECNOLOGIA TELECOMUNICACAO",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM FIXA CORP",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM FIXA E MOVEL CORP",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM FIXA E MOVEL FISICA",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM FIXA FISICA",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM MOVEL CORP",
+    "visibility": true
+  },
+  {
+    "label": "TELECOM MOVEL FISICA",
+    "visibility": true
+  },
+  {
+    "label": "TELEFONES E TABLETS",
+    "visibility": true
+  },
+  {
+    "label": "TELEVENDAS VENDAS PELO CORREIO",
+    "visibility": true
+  },
+  {
+    "label": "TEMPEROS",
+    "visibility": true
+  },
+  {
+    "label": "TINTAS E VERNIZES CONSTRUCAO",
+    "visibility": true
+  },
+  {
+    "label": "TITULOS DE CAPITALIZACAO",
+    "visibility": true
+  },
+  {
+    "label": "TONICO FORTIFICANTE E VITAMINA",
+    "visibility": true
+  },
+  {
+    "label": "TRADE ELETROS E INFORMATICA",
+    "visibility": true
+  },
+  {
+    "label": "TRADE VESTUARIO E ACESSORIOS",
+    "visibility": true
+  },
+  {
+    "label": "TRANSPORTE AEREO",
+    "visibility": true
+  },
+  {
+    "label": "TRANSPORTE CARGA",
+    "visibility": true
+  },
+  {
+    "label": "TRANSPORTE MARITIMO E TERRESTR",
+    "visibility": true
+  },
+  {
+    "label": "TRATAMENTO ETICO",
+    "visibility": true
+  },
+  {
+    "label": "TRATAMENTO PARA PELE DO CORPO",
+    "visibility": true
+  },
+  {
+    "label": "TRATAMENTO PARA PELE DO ROSTO",
+    "visibility": true
+  },
+  {
+    "label": "TRATORES E MAQS AGROPECUARIA",
+    "visibility": true
+  },
+  {
+    "label": "TV E AUDIO",
+    "visibility": true
+  },
+  {
+    "label": "UTILIDADES DOMESTICAS",
+    "visibility": true
+  },
+  {
+    "label": "VAREJO MONTADORA",
+    "visibility": true
+  },
+  {
+    "label": "VAREJO TELECOMUNIC FIXA MOVEL",
+    "visibility": true
+  },
+  {
+    "label": "VAREJO TELECOMUNICACOES FIXA",
+    "visibility": true
+  },
+  {
+    "label": "VAREJO TELECOMUNICACOES MOVEL",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS CARGA",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS CARGA VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS COMERCIAIS",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS COMERCIAIS VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS PASSEIO",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS PASSEIO VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS UTILITARIOS",
+    "visibility": true
+  },
+  {
+    "label": "VEICULOS UTILITARIOS VAREJO",
+    "visibility": true
+  },
+  {
+    "label": "VESTUARIO ADULTO",
+    "visibility": true
+  },
+  {
+    "label": "VESTUARIO ESPORTIVO",
+    "visibility": true
+  },
+  {
+    "label": "VESTUARIO INFANTIL",
+    "visibility": true
+  },
+  {
+    "label": "VINHOS CHAMPANHE E ESPUMANTE",
+    "visibility": true
+  },
+  {
+    "label": "VITRINES VIRTUAIS",
+    "visibility": true
+  }
+]

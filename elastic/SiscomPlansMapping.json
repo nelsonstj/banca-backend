@@ -1,0 +1,125 @@
+{
+	"siscom_plans": {
+		"mappings": {
+			"siscom_plan": {
+				"properties": {
+					"availabilityEnd": {
+						"type": "date"
+					},
+					"availabilityStart": {
+						"type": "date"
+					},
+					"description": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"id": {
+						"type": "long"
+					},
+					"marketType": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"programInitials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"purchaseLimitEnd": {
+						"type": "date"
+					},
+					"purchaseLimitStart": {
+						"type": "date"
+					},
+					"purchaseStatus": {
+						"type": "long"
+					},
+					"queueCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"quotas": {
+						"properties": {
+							"clientName": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"exhibitedAt": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"exhibitionEnd": {
+								"type": "date"
+							},
+							"exhibitionStart": {
+								"type": "date"
+							},
+							"number": {
+								"type": "long"
+							},
+							"position": {
+								"type": "long"
+							},
+							"range": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"renewLimit": {
+								"type": "date"
+							}
+						}
+					},
+					"restrictedSaleCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"status": {
+						"type": "long"
+					},
+					"updatedAt": {
+						"type": "date"
+					}
+				}
+			}
+		}
+	}
+}

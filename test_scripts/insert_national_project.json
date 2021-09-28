@@ -1,0 +1,62 @@
+{
+ "name": "Modelo Projeto Nacional",
+ "description": "Eu ganhei uma aposta de tapas",
+ "quota_quantity": 5,
+ "quota_items": [
+   { "type": 4, "value": 1234.56, "area": "TV" },
+   { "type": 2, "value": 9876.54, "area": "MD" },
+   { "type": 5, "name": "empresa cross-media 1", "value": 55555.45, "area": "TV" }
+ ],
+ "price_list": {
+   "limit": "2017-05-15T17:55:35.574Z"
+ },
+ "sponsors": [
+   { "name": "Patrocinador1", "market_category": 1},
+   { "name": "Patrocinador2", "market_category": 2}
+ ],
+ "renew_limit_date":"2018-05-29T16:00:00.000Z",
+ "national": {
+   "type": 1,
+   "associated_to": "program",
+   "program_initials": "KFP",
+   "insertions": [
+     { "type": 1, "value": 10 },
+     { "type": 3, "value": 20 },
+     { "type": 5, "value": 5 },
+     { "type": 7, "value": 10 },
+     { "type": 8, "value": 42 }
+   ],
+   "support_media": true,
+   "gender": 1,
+   "exhibition": {
+     "format": "day",
+     "start": "2017-05-15T17:55:35.574Z",
+     "duration": 9000
+   },
+   "commercialization_limit": "2018-05-30T17:55:35.574Z",
+   "has_digital_media": true
+ },
+ "digital_media": {
+   "vertical": ["asdasd", "agoravai.com"],
+   "sites": ["site1", "site2", "site3"],
+   "support_media": true,
+   "formats": {
+     "display": {
+       "active": false,
+       "estimated_impressions": 0,
+       "determined_impressions": 0,
+       "total_impressions": 0
+     },
+     "video": {
+       "active": false,
+       "total_views": 0
+     },
+     "content": {
+       "active": false,
+       "total_impact": 0
+     }
+   },
+   "tags": ["tag1", "tag2", "tag3"]
+ }
+
+}

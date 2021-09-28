@@ -1,0 +1,86 @@
+{
+ "name": "Hora Um",
+ "price_list": {
+   "limit": "2017-05-01T00:00:00.000Z",
+   "fixed_price": false
+ },
+ "siscom_id": 80302,
+ "published": true,
+ "net_sponsorship": {
+   "program_initials": "hora",
+   "program_days": [
+     1,
+     2,
+     3,
+     4,
+     5
+   ],
+   "start_time": "05:00",
+   "gender": 18
+ },
+ "main_type": "net_sponsorship",
+ "attachments": [
+   {
+     "path": "f1dc7f24-077a-494e-aae2-76d41f3f972b.jpg",
+     "label": "arlberg-pass-833326_960_720.jpg"
+   },
+   {
+     "path": "bd4b20fb-ea26-4471-9a13-e2d6aed99f23.pdf",
+     "label": "Cadastro Plano de Patrocínio (3) (1).pdf"
+   },
+   {
+     "path": "b3f93a0a-8f18-4bd0-8812-b9bda7043aa7.png",
+     "label": "image0011502462212054.png"
+   },
+   {
+     "path": "1d8e2ce1-20e2-44c9-a4eb-9470b2eec122.xlsx",
+     "label": "rodrigo_1.xlsx"
+   },
+   {
+     "path": "dcc4671d-80fa-499b-9c9e-a36afa919146.xls",
+     "label": "rodrigo_2.xls"
+   },
+   {
+     "path": "26c85064-a84b-4cbd-ae78-46e45169df5c.csv",
+     "label": "rodrigo_3.csv"
+   },
+   {
+     "path": "0790a666-8021-4e82-90c7-0390c55fedda.xlsx",
+     "label": "rodrigo_1.xlsx"
+   },
+   {
+     "path": "a1fa0c88-0f09-4876-a47f-c9ffafd0af98.pdf",
+     "label": "Cadastro Plano de Patrocínio (3).pdf"
+   },
+   {
+     "label": "image0011502462212054.png"
+   },
+   {
+     "path": "3e15ffd6-1a6e-47f4-9ddd-723eccb8ba5e.jpg",
+     "label": "landscape-tree-customity.jpg"
+   },
+   {
+     "path": "2dc18ec5-8ea2-441c-8314-0affbb9ed9cb.jpg",
+     "label": "landscape-tree-customity.jpg"
+   }
+ ],
+ "id": "AV3hMzHbW0c1zDVSp0hV",
+ "siscom_data": {
+   "quotas": [
+     {
+       "availableQuota": [
+         1
+       ],
+       "soldQuota": [],
+       "location": "NAC"
+     }
+   ],
+   "marketType": "N",
+   "updatedAt": "2017-07-27T18:57:04.534Z",
+   "purchaseLimitStart": "2014-12-05T00:00:00.000Z",
+   "purchaseLimitEnd": "2024-12-30T00:00:00.000Z",
+   "queueCode": "S",
+   "availableQuotas": 1,
+   "soldQuotas": 0
+ }
+}

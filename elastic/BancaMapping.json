@@ -1,0 +1,752 @@
+{
+    "banca-v2" : {
+      "mappings" : {
+        "insertion_types" : {
+          "properties" : {
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "range" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "quota_types" : {
+          "properties" : {
+            "abbr" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "area" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "priority" : {
+              "type" : "long"
+            },
+            "required" : {
+              "type" : "boolean"
+            },
+            "unique" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "regions" : {
+          "properties" : {
+            "name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "exhibitors" : {
+          "properties" : {
+            "name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "state" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "market_categories" : {
+          "properties" : {
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "visibility" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "activities" : {
+          "properties" : {
+            "action" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "at" : {
+              "type" : "date"
+            },
+            "group" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "id" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "main_type" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "user" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "project_types" : {
+          "properties" : {
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "range" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "projects" : {
+          "properties" : {
+            "attachments" : {
+              "properties" : {
+                "label" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "path" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "commercialization_limit" : {
+              "type" : "date"
+            },
+            "created_at" : {
+              "type" : "date"
+            },
+            "created_by" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "description" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "digital_media" : {
+              "properties" : {
+                "current_sponsors" : {
+                  "properties" : {
+                    "market_category" : {
+                      "type" : "long"
+                    },
+                    "name" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "exhibition" : {
+                  "properties" : {
+                    "duration" : {
+                      "type" : "long"
+                    },
+                    "end" : {
+                      "type" : "date"
+                    },
+                    "format" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "start" : {
+                      "type" : "date"
+                    }
+                  }
+                },
+                "formats" : {
+                  "properties" : {
+                    "content" : {
+                      "properties" : {
+                        "active" : {
+                          "type" : "boolean"
+                        },
+                        "total_impact" : {
+                          "type" : "long"
+                        }
+                      }
+                    },
+                    "display" : {
+                      "properties" : {
+                        "active" : {
+                          "type" : "boolean"
+                        },
+                        "determined_impressions" : {
+                          "type" : "long"
+                        },
+                        "estimated_impressions" : {
+                          "type" : "long"
+                        },
+                        "total_impressions" : {
+                          "type" : "long"
+                        }
+                      }
+                    },
+                    "video" : {
+                      "properties" : {
+                        "active" : {
+                          "type" : "boolean"
+                        },
+                        "total_views" : {
+                          "type" : "long"
+                        }
+                      }
+                    }
+                  }
+                },
+                "sites" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "support_media" : {
+                  "type" : "boolean"
+                },
+                "tags" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "vertical" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "holder" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "holder_changed" : {
+              "type" : "boolean"
+            },
+            "local" : {
+              "properties" : {
+                "associated_to" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "exhibition" : {
+                  "properties" : {
+                    "duration" : {
+                      "type" : "long"
+                    },
+                    "end" : {
+                      "type" : "date"
+                    },
+                    "format" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "start" : {
+                      "type" : "date"
+                    }
+                  }
+                },
+                "exhibitors" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "gender" : {
+                  "type" : "long"
+                },
+                "has_digital_media" : {
+                  "type" : "boolean"
+                },
+                "insertions" : {
+                  "properties" : {
+                    "type" : {
+                      "type" : "long"
+                    },
+                    "value" : {
+                      "type" : "long"
+                    }
+                  }
+                },
+                "minimum_quota" : {
+                  "type" : "long"
+                },
+                "program_days" : {
+                  "type" : "long"
+                },
+                "program_initials" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "quota_quantity" : {
+                  "type" : "long"
+                },
+                "quotas" : {
+                  "properties" : {
+                    "exhibitors" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "quota_items" : {
+                      "properties" : {
+                        "area" : {
+                          "type" : "text",
+                          "fields" : {
+                            "keyword" : {
+                              "type" : "keyword",
+                              "ignore_above" : 256
+                            }
+                          }
+                        },
+                        "name" : {
+                          "type" : "text",
+                          "fields" : {
+                            "keyword" : {
+                              "type" : "keyword",
+                              "ignore_above" : 256
+                            }
+                          }
+                        },
+                        "type" : {
+                          "type" : "long"
+                        },
+                        "value" : {
+                          "type" : "long"
+                        }
+                      }
+                    },
+                    "sponsors" : {
+                      "properties" : {
+                        "name" : {
+                          "type" : "text",
+                          "fields" : {
+                            "keyword" : {
+                              "type" : "keyword",
+                              "ignore_above" : 256
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "renew_limit_date" : {
+                  "type" : "date"
+                },
+                "support_media" : {
+                  "type" : "boolean"
+                },
+                "type" : {
+                  "type" : "long"
+                }
+              }
+            },
+            "main_type" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "national" : {
+              "properties" : {
+                "associated_to" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "exhibition" : {
+                  "properties" : {
+                    "duration" : {
+                      "type" : "long"
+                    },
+                    "end" : {
+                      "type" : "date"
+                    },
+                    "format" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "start" : {
+                      "type" : "date"
+                    }
+                  }
+                },
+                "gender" : {
+                  "type" : "long"
+                },
+                "has_digital_media" : {
+                  "type" : "boolean"
+                },
+                "insertions" : {
+                  "properties" : {
+                    "type" : {
+                      "type" : "long"
+                    },
+                    "value" : {
+                      "type" : "long"
+                    }
+                  }
+                },
+                "program_days" : {
+                  "type" : "long"
+                },
+                "program_initials" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "support_media" : {
+                  "type" : "boolean"
+                },
+                "type" : {
+                  "type" : "long"
+                }
+              }
+            },
+            "owner" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "price_list" : {
+              "properties" : {
+                "fixed_price" : {
+                  "type" : "boolean"
+                },
+                "limit" : {
+                  "type" : "date"
+                }
+              }
+            },
+            "published" : {
+              "type" : "boolean"
+            },
+            "quota_items" : {
+              "properties" : {
+                "area" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "type" : {
+                  "type" : "long"
+                },
+                "value" : {
+                  "type" : "long"
+                }
+              }
+            },
+            "quota_quantity" : {
+              "type" : "long"
+            },
+            "renew_limit_date" : {
+              "type" : "date"
+            },
+            "siscom_id" : {
+              "type" : "long"
+            },
+            "sponsors" : {
+              "properties" : {
+                "market_category" : {
+                  "type" : "long"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "updated_at" : {
+              "type" : "date"
+            }
+          }
+        },
+        "verticals" : {
+          "properties" : {
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "content_genders" : {
+          "properties" : {
+            "associatedTo" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "label" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "visibility" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "states" : {
+          "properties" : {
+            "initials" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "region" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

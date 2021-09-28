@@ -1,0 +1,17 @@
+{
+  "General": {
+    "crmGo": {
+      "authorityUrl":
+        "https://login.microsoftonline.com/???/oauth2/token",
+      "resource": "https://tvggodev.crm.dynamics.com",
+      "clientId": "????",
+      "clientSecret": "????",
+      "webApiUrl": "https://tvggodev.api.crm.dynamics.com/api/data/v8.2/",
+      "impersonate": "????"
+    },
+    "SQS": {
+      "queueUrl": "#???"
+    },
+    "environment": "dev"
+  }
+}

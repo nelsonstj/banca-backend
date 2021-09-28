@@ -1,0 +1,37 @@
+{
+  "name": "testnacmin",
+  "description": "Teste nacional com o mínimo de informação possível",
+  "quota_quantity": 0,
+  "quota_items": [{
+    "type": "1",
+    "area": "tv",
+    "value": 222222
+  }],
+  "price_list": {
+    "limit": null,
+    "fixed_price": false
+  },
+  "sponsors": [],
+  "renew_limit_date": null,
+  "commercialization_limit": null,
+  "published": false,
+  "already_published": false,
+  "holder": "AV7o8ccaW0c1zDVSp4t8",
+  "holder_changed": false,
+  "national": {
+    "type": "1",
+    "associated_to": "Evento",
+    "program_initials": "asdasd",
+    "exhibition": {
+      "format": "unknown",
+      "start": null
+    },
+    "insertions": [{
+      "type": "11",
+      "value": 111111
+    }],
+    "support_media": false,
+    "gender": "46",
+    "has_digital_media": false
+  }
+}

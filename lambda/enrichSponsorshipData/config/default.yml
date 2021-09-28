@@ -1,0 +1,132 @@
+session:
+  #  Session expiration in miliseconds
+  expiration: 1 day
+
+enable_new_relic: true
+
+siscom:
+  #base_url: https://186.239.238.179
+  #base_url: http://localhost:4321
+  base_url: https://siscomf2.redeglobo.com.br
+
+  encryption_key: 7lA5aNSMOWdz4xAcZtSGF4atesqRgRP0
+  encryption_algorithm: aes-256-cbc
+  password_length_limit: 8
+
+api_docs:
+  route: /docs
+  target_path: public
+
+log:
+  rotation:
+    keep: 5
+    size: 100m
+  timestamp: true
+  json: false
+  colorize: true
+  level: debug
+  app:
+    path:
+      debug: /Users/matheus/log/logs/app/bancas_app.log
+      error:  /Users/matheus/log/logs/app/bancas_app_err.log
+  elastic:
+    path:
+      debug: /Users/matheus/log/logs/elastic/bancas_elastic.log
+      error: /Users/matheus/log/logs/elastic/bancas_elastic_err.log
+
+morgan: dev
+
+week_days:
+  - dom
+  - seg
+  - ter
+  - qua
+  - qui
+  - sex
+  - sab
+
+# Teste de comentario
+# Elasticsearch configurations
+elasticsearch:
+  hosts:
+    - https://search-bancadev-vi4zjipsog3joneazt76znrdgy.us-east-1.es.amazonaws.com/
+    # - https://search-search-bancahomolog-knuwbsnnctiv3e35udet5yywyi.us-east-1.es.amazonaws.com
+  index: banca
+  users:
+    index: siscom_users
+    type: siscomUsers
+  groups:
+    index: siscom_users
+    type: groups
+  activity:
+    index: banca
+    type: activities
+  net_sponsorships:
+    index: banca
+    type: net_sponsorship
+  local_sponsorships:
+    index: banca
+    type: local_sponsorships
+  projeto:
+      index: testeThiago
+
+permission:
+  digital_media_group: "digital_media"
+
+aws:
+  accessKeyId: ????
+  secretAccessKey: ????
+  region: us-east-1
+
+# Attachments configuration (S3)
+attachments:
+  bucket: tvg-cdap-bancaprojetos-attachments-dev
+
+notifications:
+  broadcast_topic: arn:aws:sns:us-east-1:????:AppBancaProjetos
+  application: arn:aws:sns:us-east-1:????:app/APNS_SANDBOX/banca-dev
+  region: us-east-1
+
+  msg_templates:
+    create: Plano <%= name %> está disponível para venda.
+    update: Plano <%= name %> foi modificado.
+
+  email_templates:
+    holder_changed:
+      title: Banca de Projetos – Notificação de alteração no Plano <%= projectName %>
+      body: O Plano <%= projectName %>, criado pelo grupo <%= owner %> já está disponível para ser editado. 
+
+  email_credentials:
+    key: "????"
+    secret: "????"
+
+
+# Scheduled jobs
+scheduling:
+  queue: redis://127.0.0.1:6379
+  jobs:
+    - name: Users
+      handler: dump_users
+      data:
+        API_DUMP_HOSTNAME: http://52.36.230.184
+        API_FULL_DUMP_USERS_ENDPOINT: /ComercialApps.Apresentacao/api/v1/siscom-users
+        DI_APIKEY: ????
+      options:
+        jobId: user_dump
+        repeat:
+          cron: '*/30 * * * *'
+    - name: Plans
+      handler: dump_plans
+      data:
+        API_DUMP_HOSTNAME: http://52.36.230.184
+        API_FULL_DUMP_ENDPOINT: /ComercialApps.Apresentacao/api/v1/plans/full
+        DI_APIKEY: ????
+      options:
+        jobId: plans_dump
+        repeat:
+          cron: '*/30 * * * *'
+
+mobile:
+  bucket: tvg-cdap-bancaprojetos-dev
+
+

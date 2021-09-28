@@ -1,0 +1,45 @@
+{
+  "name": "testdigitalmin",
+  "quota_quantity": 0,
+  "quota_items": [],
+  "price_list": {
+    "limit": null,
+    "fixed_price": false
+  },
+  "sponsors": [],
+  "renew_limit_date": null,
+  "commercialization_limit": null,
+  "published": false,
+  "already_published": false,
+  "holder": "AV7o8k5OW0c1zDVSp4t9",
+  "holder_changed": false,
+  "digital_media": {
+    "vertical": ["Entretenimento"],
+    "sites": [],
+    "support_media": false,
+    "exhibition": {
+      "format": "unknown",
+      "start": null,
+      "duration": 2160
+    },
+    "current_sponsors": [],
+    "tags": [],
+    "formats": {
+      "display": {
+        "active": false,
+        "estimated_impressions": 0,
+        "determined_impressions": 0,
+        "total_impressions": 0
+      },
+      "video": {
+        "active": false,
+        "total_views": 0
+      },
+      "content": {
+        "active": false,
+        "total_impact": 0
+      }
+    },
+    "isAvailable": false
+  }
+}

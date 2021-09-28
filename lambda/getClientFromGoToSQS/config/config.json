@@ -1,0 +1,6 @@
+{
+  "accessKeyId": "???",
+  "secretAccessKey": "???",
+  "region": "us-east-1",
+  "sqsQueue": "https://sqs.us-east-1.amazonaws.com/???/fila_dev_banca_dynamicsgo"
+}

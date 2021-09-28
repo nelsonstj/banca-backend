@@ -1,0 +1,30 @@
+{
+  "name": "generate-net-sponsorship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generateNetSponsorships.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.157.0",
+    "bodybuilder": "^2.2.6",
+    "config": "^1.29.1",
+    "elasticsearch": "^14.0.0",
+    "got": "^8.0.0",
+    "http-aws-es": "^4.0.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-awslambda": "^0.5.0",
+    "gulp-install": "^1.1.0",
+    "gulp-replace-path": "^0.4.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-vinyl-zip": "^2.1.0",
+    "gulp-zip": "^4.0.0"
+  }
+}

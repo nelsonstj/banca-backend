@@ -1,0 +1,86 @@
+{
+  "name": "testelocfull",
+  "description": "Projeto local com o máximo de informação",
+  "quota_quantity": 10,
+  "quota_items": [{
+    "type": "1",
+    "area": "tv",
+    "value": 8888888
+  }, {
+    "type": "2",
+    "name": "prod 1",
+    "area": "tv",
+    "value": 777777
+  }, {
+    "type": "4",
+    "name": "cross 1",
+    "area": "tv",
+    "value": 666666
+  }],
+  "price_list": {
+    "limit": "2017-08-01T00:00:00.000Z",
+    "fixed_price": false
+  },
+  "sponsors": [{
+    "name": "coca-cola",
+    "market_category": "4"
+  }, {
+    "name": "pepsi",
+    "market_category": "2"
+  }],
+  "renew_limit_date": "2017-12-08T17:40:53.416Z",
+  "commercialization_limit": "2017-12-30T12:00:00.000Z",
+  "published": false,
+  "already_published": false,
+  "siscom_id": 89209,
+  "holder": "AV7o8ccaW0c1zDVSp4t8",
+  "holder_changed": false,
+  "local": {
+    "minimum_quota": 5,
+    "quota_quantity": 5,
+    "exhibitors": ["31", "4"],
+    "type": "1",
+    "associated_to": "Programa",
+    "program_days": [0, 1, 2, 3, 4, 5, 6],
+    "program_initials": "f118",
+    "assumes_price_of": "futsal",
+    "exhibition": {
+      "format": "day",
+      "start": "2017-12-15T00:00:00.000Z",
+      "duration": 1801
+    },
+    "renew_limit_date": "2017-12-08T20:00:00.000Z",
+    "quotas": [{
+      "exhibitors": ["15"],
+      "quota_items": [{
+        "type": "1",
+        "area": "tv",
+        "value": 77777
+      }, {
+        "type": "4",
+        "name": "cross item",
+        "area": "tv",
+        "value": 6666
+      }],
+      "sponsors": [{
+        "name": "adidas",
+        "market_category": "59"
+      }]
+    }, {
+      "exhibitors": ["8"],
+      "quota_items": [{
+        "type": "1",
+        "area": "tv",
+        "value": 5555
+      }],
+      "sponsors": []
+    }],
+    "insertions": [{
+      "type": "11",
+      "value": 9999999
+    }],
+    "support_media": false,
+    "gender": "2",
+    "has_digital_media": false
+  }
+}

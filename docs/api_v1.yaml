@@ -1,0 +1,916 @@
+swagger: '2.0'
+info:
+  title: API Banca de Projetos
+  description: API para fornecimento de dados de projetos
+  version: '1.0.0'
+# the domain of the service
+host: banca-dev.us-west-2.elasticbeanstalk.com
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+basePath: /v1/api
+produces:
+  - application/json
+paths:
+
+  #  App version control
+  /mobile/version:
+    get:
+      summary: App version
+      description: App version update control route
+      responses:
+        200:
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/MobileVersion'
+
+
+  /projects:
+    post:
+      summary: Projetos
+      description: |
+        O endpoint Projects salva as informações de um projeto.
+        A resposta é o id do projeto salvo.
+      parameters:
+        - name: main_type
+          in: query
+          description: O tipo de projeto principal.
+          required: true
+          type: string
+          enum:
+            - local
+            - national
+            - digital_media
+        - name: extra_type
+          in: query
+          description: O tipo de projeto secundário.
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+          enum:
+            - digital_media
+        - name: project
+          in: body
+          description: Os dados do projeto a ser adicionado.
+          required: true
+          schema:
+            $ref: '#/definitions/InputProject'
+      tags:
+        - Projetos
+      responses:
+        201:
+          description: Um objeto com o id do projeto
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/ProjectCreationResult'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/error'
+
+
+  /projects/{id}/upload:
+    post:
+      tags:
+        - attachments
+      parameters:
+         - in: formData
+           name: attachment
+           type: file
+           description: The file to upload.
+         - in: formData
+           name: label
+           type: string
+           description: The file label.
+      responses:
+        201:
+          description: Attached file metadata
+          schema:
+            $ref: '#/definitions/Attachment'
+
+
+  /projects/{id}/download/{attachment}:
+    get:
+      tags:
+        - attachments
+      parameters:
+        - in: path
+          name: id
+          type: string
+          description: Project id
+        - in: path
+          name: attachment
+          type: string
+          description: attachment file name
+      responses:
+        200:
+          description: Attachment download information (url)
+          schema:
+            $ref: '#/definitions/DownloadInfo'
+
+
+  /projects/{id}:
+    get:
+      summary: Get a project by it's id
+      parameters:
+        - name: id
+          required: true
+          in: path
+          type: string
+        - name: week_day_fmt
+          type: string
+          enum:
+            - int
+            - string
+
+      responses:
+        200:
+          schema:
+            $ref: '#/definitions/OutputProject'
+        404:
+          description: No project found
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+
+    put:
+      summary: Override a project by it's id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+        - name: project
+          in: body
+          description: Project data to be persisted
+          required: true
+          schema:
+            $ref: '#/definitions/InputProject'
+      responses:
+        204:
+          description: Updated successfully
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+        404:
+          description: No project found
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+
+
+  /projects/recents:
+    get:
+      summary: Consulta de projetos publicados recentemente por todas os grupos
+      description: |
+        Endpoint que recebe datas iniciais e finais de consulta e entrega todos
+        os projetos publicados dentro do intervalo definido, podendo ainda aceitar
+        o tipo de projeto como parâmetro
+      tags:
+        - Consulta
+          Projetos
+          Recentes
+          Tipo
+      parameters:
+        - name: type
+          in: query
+          required: false
+          type: string
+        - name: startDate
+          in: query
+          required: true
+          type: string
+          format: date
+        - name: finalDate
+          in: query
+          required: true
+          type: string
+          format: date
+      responses:
+        200:
+          description: |
+            Consulta funcionou e retornou resultados
+          schema:
+            $ref: '#/definitions/RecentProjectsResponse'
+        400:
+          description: |
+            Parâmetros de consulta não estão corretos
+          schema:
+            $ref: '#definitions/parametrosIncorretos'
+        500:
+          description: |
+            Erro no servidor durante a consulta
+          schema:
+            $ref: '#/definitions/error'
+
+
+  /projects/search:
+    get:
+      parameters:
+        - name: q
+          type: string
+          description: Query string
+        - name: search_method
+          description: Search method used by elasticsearch
+          type: string
+          enum:
+            - match
+            - term
+            - wildcard
+        - name: ft_published
+          type: boolean
+          description: Filters published/unpublished
+        # Advanced search
+        - name: ft_project_range
+          type: string
+          enum:
+            - national
+            - local
+            - digital_media
+          description: Project's range filter
+        - name: ft_project_type
+          type: string
+          description: Project's type filter
+        - name: ft_exhibition_start_gte
+          type: dateTime
+          description: |
+            Project's exhibition start (greater than
+            or equal) filter
+        - name: ft_exhibition_end_lte
+          type: dateTime
+          description: Project's exhibition end filter
+        - name: ft_available_quota
+          type: boolean
+          description: Project's quota availability filter
+        - name: ft_region
+          type: string
+          description: Project's region filter
+        - name: ft_state
+          type: string
+          description: Project's state filter
+        - name: ft_exhibitor
+          type: string
+          description: Project's exhibitor filter
+        - name: ft_gender
+          type: string
+          description: Project's gender filter
+        - name: ft_vertical
+          type: string
+          description: Project's vertical filter
+        - name: ft_tag
+          type: string
+          description: Project's tag filter
+        - name: week_day_fmt
+          type: string
+          enum:
+            - int
+            - string
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/OutputProject'
+
+
+  /groups/{id}/activity:
+    get:
+      parameters:
+        - name: id
+          in: path
+          description: Group id
+          type: string
+        - name: from
+          type: dateTime
+        - name: to
+          type: dateTime
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Activity'
+
+
+  # Regions listing
+  /states:
+    get:
+      summary: States constant listing
+      description: States constant listing route
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/State'
+
+  # Regions listing
+  /regions:
+    get:
+      summary: Regions constant listing
+      description: Regions constant listing route
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Region'
+
+  # Exhibitors listing
+  /exhibitors:
+    get:
+      summary: Exhibitors constant listing
+      description: Exhibitors constant listing route
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Exhibitor'
+
+  # Exhibitors listing
+  /verticals:
+    get:
+      summary: Exhibitors constant listing
+      description: Exhibitors constant listing route
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Vertical'
+
+    # content_genders listing
+  /content_genders:
+    get:
+      summary: content_genders constant listing
+      description: content_genders constant listing route
+      responses:
+        200:
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ContentGenders'
+
+definitions:
+
+  # Mobile version response
+  MobileVersion:
+    type: object
+    properties:
+      version:
+        type: string
+      url:
+        type: string
+        description: App download url
+
+  # Recent projects response schema.
+  RecentProjectsResponse:
+    type: object
+    properties:
+      response:
+        type: array
+        description: List of recent projects.
+        items:
+          $ref: '#/definitions/RecentProject'
+
+  # Recent projects' project schema.
+  RecentProject:
+    type: object
+    properties:
+      projectType:
+        type: string
+        description: Project's main range/type.
+        enum:
+          - PN
+          - PL
+          - MD
+      projectName:
+        type: string
+        description: Project's name
+      createdBy:
+        type: string
+        description: User that created the project.
+      updatedAt:
+        type: string
+        format: date
+        description: Last update date.
+      mainPdf:
+        type: string
+        description: Project's pdf download link.
+
+
+  # Object returned at project insertion.
+  ProjectCreationResult:
+    type: object
+    properties:
+      id:
+        type: string
+        description: Project id.
+
+  # Project data
+  InputProject:
+    type: object
+    properties:
+      name:
+        type: string
+        description: Project's name.
+      description:
+        type: string
+        description: Project's description.
+      quota_quantity:
+        type: integer
+        description: Number of quotas related to the project.
+      quota_items:
+        type: array
+        items:
+          $ref: '#/definitions/QuotaItem'
+      price_list:
+        type: object
+        properties:
+          limit:
+            type: dateTime
+            description: Price list expiration
+          fixed_price:
+            type: boolean
+            description: If price is fixed or not
+      sponsors:
+          type: array
+          items:
+            $ref: '#/definitions/Sponsor'
+      renew_limit_date:
+        type: dateTime
+      commercialization_limit:
+        type: dateTime
+      national:
+          $ref: '#/definitions/InputNationalProject'
+      local:
+          $ref: '#/definitions/InputLocalProject'
+      digital_media:
+          $ref: '#/definitions/InputDigitalMediaProject'
+
+
+  # Project data
+  OutputProject:
+    type: object
+    properties:
+      name:
+        type: string
+        description: Project's name.
+      description:
+        type: string
+        description: Project's description.
+      quota_quantity:
+        type: integer
+        description: Number of (global) quotas related to the project.
+      quota_items:
+        type: array
+        items:
+          $ref: '#/definitions/QuotaItem'
+      price_list:
+        type: object
+        properties:
+          limit:
+            type: dateTime
+            description: Price list expiration
+          fixed_price:
+            type: boolean
+            description: If price is fixed or not
+      sponsors:
+          type: array
+          items:
+            $ref: '#/definitions/Sponsor'
+      renew_limit_date:
+        type: dateTime
+      commercialization_limit:
+        type: dateTime
+      created_by:
+        type: string
+      created_at:
+        type: dateTime
+      updated_at:
+        type: dateTime
+      attachments:
+        type: array
+        items:
+          $ref: '#/definitions/Attachment'
+      national:
+          $ref: '#/definitions/OutputNationalProject'
+      local:
+          $ref: '#/definitions/OutputLocalProject'
+      digital_media:
+          $ref: '#/definitions/OutputDigitalMediaProject'
+      owner:
+        type: string
+      holder:
+        type: string
+      siscom_data:
+        $ref: '#/definitions/siscom_data'
+      holder_changed:
+        type: boolean
+
+  # Siscom Data
+
+  # Quota schema
+  Quota:
+    type: object
+    properties:
+      exhibitors:
+        type: array
+        items:
+          type: string
+          description: Exhibitor id
+      quota_items:
+        type: array
+        items:
+          $ref: '#/definitions/QuotaItem'
+      sponsors:
+          type: array
+          items:
+            $ref: '#/definitions/Sponsor'
+
+  # Quota item schema
+  QuotaItem:
+    type: object
+    properties:
+      type:
+        type: integer
+        required: true
+      name:
+        type: string
+      value:
+        type: number
+        format: float
+        required: true
+      area:
+        type: string
+        required: true
+
+  # Sponsor model
+  Sponsor:
+    type: object
+    properties:
+      name:
+        type: string
+      market_category:
+        type: integer
+
+  # TV insertion model
+  Insertion:
+    type: object
+    properties:
+      type:
+        type: integer
+      value:
+        type: integer
+
+  # Exhibition period data
+  InputExhibition:
+    type: object
+    properties:
+      format:
+        type: string
+      start:
+        type: dateTime
+      duration:
+        type: integer
+
+  # Exhibition period data
+  OutputExhibition:
+    type: object
+    properties:
+      format:
+        type: string
+      start:
+        type: dateTime
+      end:
+        type: dateTime
+      duration:
+        type: integer
+
+  # Display Format Schema
+  DisplayFormat:
+    type: object
+    properties:
+      active:
+        type: boolean
+      estimated_impressions:
+        type: integer
+      determined_impressions:
+        type: integer
+      total_impressions:
+        type: integer
+
+  # Video Format Schema
+  VideoFormat:
+    type: object
+    properties:
+      active:
+        type: boolean
+      total_views:
+        type: integer
+
+  # Content Format Schema
+  ContentFormat:
+    type: object
+    properties:
+      active:
+        type: boolean
+      total_impact:
+        type: integer
+
+  # National Project data
+  InputNationalProject:
+    type: object
+    properties:
+      type:
+        type: integer
+      associated_to:
+        type: string
+      program_days:
+        type: array
+        items:
+          type: number
+          minimum: 0
+      program_initials:
+        type: string
+      insertions:
+        type: array
+        items:
+          $ref: '#/definitions/Insertion'
+      support_media:
+        type: boolean
+      gender:
+        type: integer
+      exhibition:
+        $ref: '#/definitions/InputExhibition'
+      has_digital_media:
+        type: boolean
+
+  # National Project data
+  OutputNationalProject:
+    type: object
+    properties:
+      type:
+        type: integer
+      associated_to:
+        type: string
+      program_days:
+        type: array
+        items:
+          type: number
+          minimum: 0
+      program_initials:
+        type: string
+      insertions:
+        type: array
+        items:
+          $ref: '#/definitions/Insertion'
+      support_media:
+        type: boolean
+      gender:
+        type: integer
+      exhibition:
+        $ref: '#/definitions/OutputExhibition'
+      has_digital_media:
+        type: boolean
+
+
+  # Local Project data
+  InputLocalProject:
+    type: object
+    properties:
+      minimum_quota:
+        type: integer
+      quota_quantity:
+        type: integer
+        description: Number of (local) quotas related to the project.
+      exhibitors:
+        type: array
+        items:
+          type: string
+      quotas:
+        type: array
+        items:
+          $ref: '#/definitions/Quota'
+      type:
+        type: integer
+      associated_to:
+        type: string
+      program_days:
+        type: array
+        items:
+          type: integer
+          minimum: 0
+          maximum: 6
+      program_initials:
+        type: string
+      exhibition:
+        $ref: '#/definitions/InputExhibition'
+      insertions:
+        type: array
+        items:
+          $ref: '#/definitions/Insertion'
+      gender:
+        type: integer
+      has_digital_media:
+        type: boolean
+
+  # Local Project data
+  OutputLocalProject:
+    type: object
+    properties:
+      minimum_quota:
+        type: integer
+      quota_quantity:
+        type: integer
+        description: Number of (local) quotas related to the project.
+      exhibitors:
+        type: array
+        items:
+          type: string
+      quotas:
+        type: array
+        items:
+          $ref: '#/definitions/Quota'
+      renew_limit_date:
+        type: dateTime
+      type:
+        type: integer
+      associated_to:
+        type: string
+      program_days:
+        type: array
+        items:
+          type: integer
+          minimum: 0
+          maximum: 6
+      program_initials:
+        type: string
+      exhibition:
+        $ref: '#/definitions/OutputExhibition'
+      insertions:
+        type: array
+        items:
+          $ref: '#/definitions/Insertion'
+      gender:
+        type: integer
+      has_digital_media:
+        type: boolean
+
+  # Digital Media Project data
+  InputDigitalMediaProject:
+    type: object
+    properties:
+      vertical:
+        type: array
+        items:
+          type: string
+      sites:
+        type: array
+        items:
+          type: string
+      support_media:
+        type: boolean
+      exhibition:
+        $ref: '#/definitions/InputExhibition'
+      formats:
+        type: object
+        properties:
+          display:
+            $ref: '#/definitions/DisplayFormat'
+          video:
+            $ref: '#/definitions/VideoFormat'
+          content:
+            $ref: '#/definitions/ContentFormat'
+      tags:
+        type: array
+        items:
+          type: string
+
+
+  # Digital Media Project data
+  OutputDigitalMediaProject:
+      type: object
+      properties:
+        vertical:
+          type: array
+          items:
+            type: string
+        sites:
+          type: array
+          items:
+            type: string
+        support_media:
+          type: boolean
+        exhibition:
+          $ref: '#/definitions/OutputExhibition'
+        formats:
+          type: object
+          properties:
+            display:
+              $ref: '#/definitions/DisplayFormat'
+            video:
+              $ref: '#/definitions/VideoFormat'
+            content:
+              $ref: '#/definitions/ContentFormat'
+        tags:
+          type: array
+          items:
+            type: string
+        current_sponsors:
+          type: object
+          properties:
+            name: string
+            market_category: integer
+
+
+  Attachment:
+    type: object
+    properties:
+      label:
+        type: string
+      path:
+        type: string
+
+
+  Region:
+    type: object
+    properties:
+      name:
+        type: string
+
+  State:
+    type: object
+    properties:
+      name:
+        type: string
+      initials:
+        type: string
+      region:
+        type: string
+        description: Region id
+
+  Exhibitor:
+    type: object
+    properties:
+      name:
+        type: string
+      state:
+        type: string
+
+  DownloadInfo:
+    type: object
+    properties:
+      url:
+        type: string
+
+  Activity:
+    type: object
+    properties:
+      at:
+        type: dateTime
+      user:
+        type: string
+        description: username
+      group:
+        type: string
+        description: group id
+      action:
+        type: string
+        enum:
+          - create
+          - update
+          - upload
+          - pdf
+
+    Vertical:
+      type: object
+      properties:
+        label:
+          type: string
+        id:
+          type: string
+
+    ContentGenders:
+      type: object
+      properties:
+        label:
+          type: string
+        id:
+          type: string
+        associatedTo:
+          type: array
+        visibility:
+          type: boolean

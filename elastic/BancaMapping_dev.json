@@ -1,0 +1,3119 @@
+{
+	"banca_v2": {
+		"mappings": {
+			"verticals": {
+				"properties": {
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"insertion_types": {
+				"properties": {
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"range": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"states": {
+				"properties": {
+					"initials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"region": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"projects": {
+				"properties": {
+					"_isAvailable": {
+						"type": "long"
+					},
+					"already_published": {
+						"type": "boolean"
+					},
+					"attachments": {
+						"properties": {
+							"label": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"path": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"body": {
+						"properties": {
+							"doc": {
+								"properties": {
+									"siscom_data": {
+										"properties": {
+											"availabilityEnd": {
+												"type": "date"
+											},
+											"availabilityStart": {
+												"type": "date"
+											},
+											"description": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"id": {
+												"type": "long"
+											},
+											"isAvailable": {
+												"type": "boolean"
+											},
+											"marketType": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"programInitials": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"purchaseLimitEnd": {
+												"type": "date"
+											},
+											"purchaseLimitStart": {
+												"type": "date"
+											},
+											"purchaseStatus": {
+												"type": "long"
+											},
+											"queueCode": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"quotaQuantity": {
+												"type": "long"
+											},
+											"quotas": {
+												"properties": {
+													"availableQuotas": {
+														"type": "long"
+													},
+													"marketType": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													},
+													"purchaseLimitEnd": {
+														"type": "date"
+													},
+													"purchaseLimitStart": {
+														"type": "date"
+													},
+													"purchaseStatus": {
+														"type": "long"
+													},
+													"queueCode": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													},
+													"quotas": {
+														"properties": {
+															"availableQuota": {
+																"type": "long"
+															},
+															"location": {
+																"type": "text",
+																"fields": {
+																	"keyword": {
+																		"type": "keyword",
+																		"ignore_above": 256
+																	}
+																}
+															}
+														}
+													},
+													"soldQuotas": {
+														"type": "long"
+													},
+													"status": {
+														"type": "long"
+													},
+													"updatedAt": {
+														"type": "date"
+													}
+												}
+											},
+											"restrictedSaleCode": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"status": {
+												"type": "long"
+											},
+											"updatedAt": {
+												"type": "date"
+											}
+										}
+									}
+								}
+							}
+						}
+					},
+					"commercialization_limit": {
+						"type": "date"
+					},
+					"created_at": {
+						"type": "date"
+					},
+					"created_by": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"description": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"digital_media": {
+						"properties": {
+							"current_sponsors": {
+								"properties": {
+									"market_category": {
+										"type": "long"
+									},
+									"name": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									}
+								}
+							},
+							"exhibition": {
+								"properties": {
+									"duration": {
+										"type": "long"
+									},
+									"end": {
+										"type": "date"
+									},
+									"format": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"start": {
+										"type": "date"
+									}
+								}
+							},
+							"formats": {
+								"properties": {
+									"content": {
+										"properties": {
+											"active": {
+												"type": "boolean"
+											},
+											"total_impact": {
+												"type": "long"
+											}
+										}
+									},
+									"display": {
+										"properties": {
+											"active": {
+												"type": "boolean"
+											},
+											"determined_impressions": {
+												"type": "long"
+											},
+											"estimated_impressions": {
+												"type": "long"
+											},
+											"total_impressions": {
+												"type": "long"
+											}
+										}
+									},
+									"video": {
+										"properties": {
+											"active": {
+												"type": "boolean"
+											},
+											"total_views": {
+												"type": "long"
+											}
+										}
+									}
+								}
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"sites": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"support_media": {
+								"type": "boolean"
+							},
+							"tags": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"vertical": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"holder": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"holder_changed": {
+						"type": "boolean"
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"isAvailable": {
+						"type": "boolean"
+					},
+					"local": {
+						"properties": {
+							"associated_to": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"assumes_price_of": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"exhibition": {
+								"properties": {
+									"duration": {
+										"type": "long"
+									},
+									"end": {
+										"type": "date"
+									},
+									"format": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"start": {
+										"type": "date"
+									}
+								}
+							},
+							"exhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"gender": {
+								"type": "long"
+							},
+							"has_digital_media": {
+								"type": "boolean"
+							},
+							"insertions": {
+								"properties": {
+									"type": {
+										"type": "long"
+									},
+									"value": {
+										"type": "long"
+									}
+								}
+							},
+							"minimum_quota": {
+								"type": "long"
+							},
+							"program_days": {
+								"type": "long"
+							},
+							"program_initials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quota_quantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"exhibitors": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"quota_items": {
+										"properties": {
+											"area": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"name": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"type": {
+												"type": "long"
+											},
+											"value": {
+												"type": "long"
+											}
+										}
+									},
+									"sponsors": {
+										"properties": {
+											"name": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											}
+										}
+									}
+								}
+							},
+							"renew_limit_date": {
+								"type": "date"
+							},
+							"support_media": {
+								"type": "boolean"
+							},
+							"type": {
+								"type": "long"
+							}
+						}
+					},
+					"main_type": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						},
+						"fielddata": true
+					},
+					"my_field": {
+						"type": "text",
+						"fielddata": true
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"national": {
+						"properties": {
+							"associated_to": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"assumes_price_of": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"exhibition": {
+								"properties": {
+									"duration": {
+										"type": "long"
+									},
+									"end": {
+										"type": "date"
+									},
+									"format": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"start": {
+										"type": "date"
+									}
+								}
+							},
+							"gender": {
+								"type": "long"
+							},
+							"has_digital_media": {
+								"type": "boolean"
+							},
+							"insertions": {
+								"properties": {
+									"type": {
+										"type": "long"
+									},
+									"value": {
+										"type": "long"
+									}
+								}
+							},
+							"program_days": {
+								"type": "long"
+							},
+							"program_initials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"support_media": {
+								"type": "boolean"
+							},
+							"type": {
+								"type": "long"
+							}
+						}
+					},
+					"owner": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"price_list": {
+						"properties": {
+							"fixed_price": {
+								"type": "boolean"
+							},
+							"limit": {
+								"type": "date"
+							}
+						}
+					},
+					"priorityDate": {
+						"type": "date"
+					},
+					"published": {
+						"type": "boolean"
+					},
+					"push_message": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"query": {
+						"properties": {
+							"bool": {
+								"properties": {
+									"must_not": {
+										"properties": {
+											"exists": {
+												"properties": {
+													"field": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							},
+							"match_all": {
+								"type": "object"
+							}
+						}
+					},
+					"quota_items": {
+						"properties": {
+							"area": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"name": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"type": {
+								"type": "long"
+							},
+							"value": {
+								"type": "long"
+							}
+						}
+					},
+					"quota_quantity": {
+						"type": "long"
+					},
+					"renew_limit_date": {
+						"type": "date"
+					},
+					"script": {
+						"properties": {
+							"inline": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"send_push_notification": {
+						"type": "boolean"
+					},
+					"siscomData": {
+						"properties": {
+							"availabilityEnd": {
+								"type": "date"
+							},
+							"availabilityStart": {
+								"type": "date"
+							},
+							"description": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"id": {
+								"type": "long"
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"marketType": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"programInitials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"purchaseLimitEnd": {
+								"type": "date"
+							},
+							"purchaseLimitStart": {
+								"type": "date"
+							},
+							"purchaseStatus": {
+								"type": "long"
+							},
+							"queueCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quotaQuantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"availableQuotas": {
+										"type": "long"
+									},
+									"soldQuotas": {
+										"type": "long"
+									}
+								}
+							},
+							"restrictedSaleCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"status": {
+								"type": "long"
+							},
+							"updatedAt": {
+								"type": "date"
+							}
+						}
+					},
+					"siscom_data": {
+						"properties": {
+							"availabilityEnd": {
+								"type": "date"
+							},
+							"availabilityStart": {
+								"type": "date"
+							},
+							"availableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"availableQuotas": {
+								"type": "long"
+							},
+							"availiableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"description": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"id": {
+								"type": "long"
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"marketType": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"programInitials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"purchaseLimitEnd": {
+								"type": "date"
+							},
+							"purchaseLimitStart": {
+								"type": "date"
+							},
+							"purchaseStatus": {
+								"type": "long"
+							},
+							"queueCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quotaQuantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"availableQuota": {
+										"type": "long"
+									},
+									"availableQuotas": {
+										"type": "long"
+									},
+									"hasQueue": {
+										"type": "boolean"
+									},
+									"location": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"marketType": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"purchaseLimitEnd": {
+										"type": "date"
+									},
+									"purchaseLimitStart": {
+										"type": "date"
+									},
+									"purchaseStatus": {
+										"type": "long"
+									},
+									"queueCode": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"quotas": {
+										"properties": {
+											"availableQuota": {
+												"type": "long"
+											},
+											"location": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"soldQuota": {
+												"properties": {
+													"clientName": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													},
+													"exhibitionEnd": {
+														"type": "date"
+													},
+													"exhibitionStart": {
+														"type": "date"
+													},
+													"number": {
+														"type": "long"
+													},
+													"renewLimit": {
+														"type": "date"
+													}
+												}
+											}
+										}
+									},
+									"soldQuota": {
+										"properties": {
+											"clientName": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"exhibitionEnd": {
+												"type": "date"
+											},
+											"exhibitionStart": {
+												"type": "date"
+											},
+											"number": {
+												"type": "long"
+											},
+											"queue": {
+												"type": "long"
+											},
+											"queueCount": {
+												"type": "long"
+											},
+											"renewLimit": {
+												"type": "date"
+											}
+										}
+									},
+									"soldQuotas": {
+										"type": "long"
+									},
+									"status": {
+										"type": "long"
+									},
+									"updatedAt": {
+										"type": "date"
+									}
+								}
+							},
+							"restrictedSaleCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuotas": {
+								"type": "long"
+							},
+							"status": {
+								"type": "long"
+							},
+							"unavailableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"updatedAt": {
+								"type": "date"
+							}
+						}
+					},
+					"siscom_id": {
+						"type": "long"
+					},
+					"size": {
+						"type": "long"
+					},
+					"sponsors": {
+						"properties": {
+							"market_category": {
+								"type": "long"
+							},
+							"name": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"updated_at": {
+						"type": "date"
+					}
+				}
+			},
+			"local_sponsorships": {
+				"properties": {
+					"availabilityEnd": {
+						"type": "date"
+					},
+					"availabilityStart": {
+						"type": "date"
+					},
+					"availableQuotas": {
+						"type": "long"
+					},
+					"description": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"formats": {
+						"properties": {
+							"exhibitor": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"type": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"isAvailable": {
+						"type": "boolean"
+					},
+					"marketType": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"priceTable": {
+						"properties": {
+							"exhibitor": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"monthlyPrice": {
+								"type": "float"
+							},
+							"referenceDate": {
+								"type": "date"
+							}
+						}
+					},
+					"programInitials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"purchaseLimitEnd": {
+						"type": "date"
+					},
+					"purchaseLimitStart": {
+						"type": "date"
+					},
+					"purchaseStatus": {
+						"type": "long"
+					},
+					"queueCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"quotaQuantity": {
+						"type": "long"
+					},
+					"quotas": {
+						"properties": {
+							"availableQuota": {
+								"type": "long"
+							},
+							"location": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuota": {
+								"properties": {
+									"clientName": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"exhibitionEnd": {
+										"type": "date"
+									},
+									"exhibitionStart": {
+										"type": "date"
+									},
+									"number": {
+										"type": "long"
+									},
+									"renewLimit": {
+										"type": "date"
+									}
+								}
+							}
+						}
+					},
+					"restrictedSaleCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"soldQuotas": {
+						"type": "long"
+					},
+					"status": {
+						"type": "long"
+					},
+					"updatedAt": {
+						"type": "date"
+					}
+				}
+			},
+			"sponsorships": {
+				"properties": {
+					"already_published": {
+						"type": "boolean"
+					},
+					"associated_to": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"attachments": {
+						"properties": {
+							"label": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"path": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"availableQuotas": {
+						"type": "long"
+					},
+					"created_at": {
+						"type": "date"
+					},
+					"created_by": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"description": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"digital_media": {
+						"properties": {
+							"formats": {
+								"properties": {
+									"display": {
+										"properties": {
+											"active": {
+												"type": "boolean"
+											},
+											"determined_impressions": {
+												"type": "long"
+											},
+											"estimated_impressions": {
+												"type": "long"
+											}
+										}
+									},
+									"video": {
+										"properties": {
+											"active": {
+												"type": "boolean"
+											},
+											"total_views": {
+												"type": "long"
+											}
+										}
+									}
+								}
+							},
+							"sites": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"support_media": {
+								"type": "boolean"
+							},
+							"tags": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"vertical": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"exhibition": {
+						"properties": {
+							"duration": {
+								"type": "long"
+							},
+							"end": {
+								"type": "date"
+							},
+							"format": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"start": {
+								"type": "date"
+							}
+						}
+					},
+					"fixed_price": {
+						"type": "boolean"
+					},
+					"formats": {
+						"properties": {
+							"display": {
+								"properties": {
+									"active": {
+										"type": "boolean"
+									},
+									"determined_impressions": {
+										"type": "long"
+									},
+									"estimated_impressions": {
+										"type": "long"
+									},
+									"total_impressions": {
+										"type": "long"
+									}
+								}
+							},
+							"video": {
+								"properties": {
+									"active": {
+										"type": "boolean"
+									},
+									"total_views": {
+										"type": "long"
+									}
+								}
+							}
+						}
+					},
+					"gender": {
+						"type": "long"
+					},
+					"has_digital_media": {
+						"type": "boolean"
+					},
+					"holder": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"holder_changed": {
+						"type": "boolean"
+					},
+					"insertions": {
+						"properties": {
+							"type": {
+								"type": "long"
+							},
+							"value": {
+								"type": "long"
+							}
+						}
+					},
+					"limit": {
+						"type": "date"
+					},
+					"main_type": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						},
+						"fielddata": true
+					},
+					"marketType": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"national_sponsorship": {
+						"properties": {
+							"commercial_scheme": {
+								"properties": {
+									"type": {
+										"type": "long"
+									},
+									"value": {
+										"type": "long"
+									}
+								}
+							},
+							"cross_media": {
+								"properties": {
+									"globo_news_value": {
+										"type": "long"
+									},
+									"merchandising": {
+										"type": "boolean"
+									}
+								}
+							},
+							"gender": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"has_digital_media": {
+								"type": "boolean"
+							},
+							"hide_price": {
+								"type": "boolean"
+							},
+							"observation": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"price_tables": {
+								"properties": {
+									"quota_items": {
+										"properties": {
+											"area": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"name": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"type": {
+												"type": "long"
+											},
+											"value": {
+												"type": "long"
+											}
+										}
+									},
+									"reference": {
+										"type": "date"
+									}
+								}
+							},
+							"program_days": {
+								"type": "long"
+							},
+							"program_initials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"start_time": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"synopsis": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"observation": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"owner": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"price_list": {
+						"properties": {
+							"fixed_price": {
+								"type": "boolean"
+							},
+							"limit": {
+								"type": "date"
+							}
+						}
+					},
+					"priorityDate": {
+						"type": "date"
+					},
+					"program_days": {
+						"type": "long"
+					},
+					"program_initials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"published": {
+						"type": "boolean"
+					},
+					"push_message": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"quota_items": {
+						"properties": {
+							"area": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"name": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"type": {
+								"type": "long"
+							},
+							"value": {
+								"type": "long"
+							}
+						}
+					},
+					"quotas": {
+						"properties": {
+							"availableQuota": {
+								"type": "long"
+							},
+							"location": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"send_push_notification": {
+						"type": "boolean"
+					},
+					"siscom_data": {
+						"properties": {
+							"availabilityEnd": {
+								"type": "date"
+							},
+							"availabilityStart": {
+								"type": "date"
+							},
+							"availableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"availableQuotas": {
+								"type": "long"
+							},
+							"availiableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"description": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"id": {
+								"type": "long"
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"marketType": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"programInitials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"purchaseLimitEnd": {
+								"type": "date"
+							},
+							"purchaseLimitStart": {
+								"type": "date"
+							},
+							"purchaseStatus": {
+								"type": "long"
+							},
+							"queueCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"queueExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quotaQuantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"availableQuota": {
+										"type": "long"
+									},
+									"availableQuotas": {
+										"type": "long"
+									},
+									"hasQueue": {
+										"type": "boolean"
+									},
+									"location": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"marketType": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"purchaseLimitEnd": {
+										"type": "date"
+									},
+									"purchaseLimitStart": {
+										"type": "date"
+									},
+									"purchaseStatus": {
+										"type": "long"
+									},
+									"queueCode": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"quotas": {
+										"properties": {
+											"availableQuota": {
+												"type": "long"
+											},
+											"location": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"soldQuota": {
+												"properties": {
+													"clientName": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													},
+													"exhibitionEnd": {
+														"type": "date"
+													},
+													"exhibitionStart": {
+														"type": "date"
+													},
+													"number": {
+														"type": "long"
+													},
+													"renewLimit": {
+														"type": "date"
+													}
+												}
+											}
+										}
+									},
+									"soldQuota": {
+										"properties": {
+											"clientName": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"exhibitionEnd": {
+												"type": "date"
+											},
+											"exhibitionStart": {
+												"type": "date"
+											},
+											"number": {
+												"type": "long"
+											},
+											"queue": {
+												"type": "long"
+											},
+											"queueCount": {
+												"type": "long"
+											},
+											"renewLimit": {
+												"type": "date"
+											}
+										}
+									},
+									"soldQuotas": {
+										"type": "long"
+									},
+									"status": {
+										"type": "long"
+									},
+									"updatedAt": {
+										"type": "date"
+									}
+								}
+							},
+							"restrictedSaleCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuotas": {
+								"type": "long"
+							},
+							"status": {
+								"type": "long"
+							},
+							"unavailableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"updatedAt": {
+								"type": "date"
+							}
+						}
+					},
+					"siscom_id": {
+						"type": "long"
+					},
+					"sites": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"soldQuotas": {
+						"type": "long"
+					},
+					"support_media": {
+						"type": "boolean"
+					},
+					"synopsis": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"tags": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"type": {
+						"type": "long"
+					},
+					"updatedAt": {
+						"type": "date"
+					},
+					"updated_at": {
+						"type": "date"
+					},
+					"vertical": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"regions": {
+				"properties": {
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"net_sponsorship": {
+				"properties": {
+					"conversionIndex": {
+						"type": "float"
+					},
+					"main_type": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						},
+						"fielddata": true
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"net_sponsorship": {
+						"properties": {
+							"gender": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"program_days": {
+								"type": "long"
+							},
+							"program_initials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"start_time": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"priceTable": {
+						"properties": {
+							"exhibitor": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"monthlyPrice": {
+								"type": "float"
+							},
+							"referenceDate": {
+								"type": "date"
+							}
+						}
+					},
+					"published": {
+						"type": "boolean"
+					},
+					"siscom_data": {
+						"properties": {
+							"availabilityEnd": {
+								"type": "date"
+							},
+							"availabilityStart": {
+								"type": "date"
+							},
+							"availableQuotas": {
+								"type": "long"
+							},
+							"description": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"id": {
+								"type": "long"
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"marketType": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"programInitials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"purchaseLimitEnd": {
+								"type": "date"
+							},
+							"purchaseLimitStart": {
+								"type": "date"
+							},
+							"purchaseStatus": {
+								"type": "long"
+							},
+							"queueCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quotaQuantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"availableQuota": {
+										"type": "long"
+									},
+									"location": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									}
+								}
+							},
+							"restrictedSaleCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuotas": {
+								"type": "long"
+							},
+							"status": {
+								"type": "long"
+							},
+							"updatedAt": {
+								"type": "date"
+							}
+						}
+					},
+					"updated_at": {
+						"type": "date"
+					}
+				}
+			},
+			"sponsorship_quota_types": {
+				"properties": {
+					"abbr": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"area": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"priority": {
+						"type": "long"
+					},
+					"required": {
+						"type": "boolean"
+					},
+					"unique": {
+						"type": "boolean"
+					}
+				}
+			},
+			"sponsorship_content_genders": {
+				"properties": {
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"visibility": {
+						"type": "boolean"
+					}
+				}
+			},
+			"content_genders": {
+				"properties": {
+					"associatedTo": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"visibility": {
+						"type": "boolean"
+					}
+				}
+			},
+			"market_categories": {
+				"properties": {
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"visibility": {
+						"type": "boolean"
+					}
+				}
+			},
+			"genders_ibope": {
+				"properties": {
+					"details": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"commercial_scheme": {
+				"properties": {
+					"category": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"index": {
+						"type": "long"
+					},
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"project_types": {
+				"properties": {
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"range": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"activities": {
+				"properties": {
+					"action": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"at": {
+						"type": "date"
+					},
+					"group": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"main_type": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						},
+						"fielddata": true
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"user": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"conversion_index": {
+				"properties": {
+					"indice": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"sigla": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			},
+			"net_sponsorships": {
+				"properties": {
+					"availabilityEnd": {
+						"type": "date"
+					},
+					"availabilityStart": {
+						"type": "date"
+					},
+					"availableQuotas": {
+						"type": "long"
+					},
+					"conversionIndex": {
+						"type": "float"
+					},
+					"description": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"fixed_price": {
+						"type": "boolean"
+					},
+					"formats": {
+						"properties": {
+							"exhibitor": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"type": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"gender": {
+						"type": "long"
+					},
+					"id": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"isAvailable": {
+						"type": "boolean"
+					},
+					"limit": {
+						"type": "date"
+					},
+					"main_type": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						},
+						"fielddata": true
+					},
+					"marketType": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"net_sponsorship": {
+						"properties": {
+							"gender": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"program_days": {
+								"type": "long"
+							},
+							"program_initials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"start_time": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							}
+						}
+					},
+					"priceTable": {
+						"properties": {
+							"exhibitor": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"monthlyPrice": {
+								"type": "float"
+							},
+							"referenceDate": {
+								"type": "date"
+							}
+						}
+					},
+					"priorityDate": {
+						"type": "date"
+					},
+					"programInitials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"program_days": {
+						"type": "long"
+					},
+					"program_initials": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"published": {
+						"type": "boolean"
+					},
+					"purchaseLimitEnd": {
+						"type": "date"
+					},
+					"purchaseLimitStart": {
+						"type": "date"
+					},
+					"purchaseStatus": {
+						"type": "long"
+					},
+					"queueCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"quotaQuantity": {
+						"type": "long"
+					},
+					"quotas": {
+						"properties": {
+							"availableQuota": {
+								"type": "long"
+							},
+							"location": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuota": {
+								"properties": {
+									"clientName": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"exhibitionEnd": {
+										"type": "date"
+									},
+									"exhibitionStart": {
+										"type": "date"
+									},
+									"number": {
+										"type": "long"
+									},
+									"renewLimit": {
+										"type": "date"
+									}
+								}
+							}
+						}
+					},
+					"restrictedSaleCode": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"siscom_data": {
+						"properties": {
+							"availabilityEnd": {
+								"type": "date"
+							},
+							"availabilityStart": {
+								"type": "date"
+							},
+							"availableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"availableQuotas": {
+								"type": "long"
+							},
+							"availiableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"description": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"id": {
+								"type": "long"
+							},
+							"isAvailable": {
+								"type": "boolean"
+							},
+							"marketType": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"programInitials": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"purchaseLimitEnd": {
+								"type": "date"
+							},
+							"purchaseLimitStart": {
+								"type": "date"
+							},
+							"purchaseStatus": {
+								"type": "long"
+							},
+							"queueCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"queueExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"quotaQuantity": {
+								"type": "long"
+							},
+							"quotas": {
+								"properties": {
+									"availableQuota": {
+										"type": "long"
+									},
+									"availableQuotas": {
+										"type": "long"
+									},
+									"hasQueue": {
+										"type": "boolean"
+									},
+									"location": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"marketType": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"purchaseLimitEnd": {
+										"type": "date"
+									},
+									"purchaseLimitStart": {
+										"type": "date"
+									},
+									"purchaseStatus": {
+										"type": "long"
+									},
+									"queueCode": {
+										"type": "text",
+										"fields": {
+											"keyword": {
+												"type": "keyword",
+												"ignore_above": 256
+											}
+										}
+									},
+									"quotas": {
+										"properties": {
+											"availableQuota": {
+												"type": "long"
+											},
+											"location": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"soldQuota": {
+												"properties": {
+													"clientName": {
+														"type": "text",
+														"fields": {
+															"keyword": {
+																"type": "keyword",
+																"ignore_above": 256
+															}
+														}
+													},
+													"exhibitionEnd": {
+														"type": "date"
+													},
+													"exhibitionStart": {
+														"type": "date"
+													},
+													"number": {
+														"type": "long"
+													},
+													"renewLimit": {
+														"type": "date"
+													}
+												}
+											}
+										}
+									},
+									"soldQuota": {
+										"properties": {
+											"clientName": {
+												"type": "text",
+												"fields": {
+													"keyword": {
+														"type": "keyword",
+														"ignore_above": 256
+													}
+												}
+											},
+											"exhibitionEnd": {
+												"type": "date"
+											},
+											"exhibitionStart": {
+												"type": "date"
+											},
+											"number": {
+												"type": "long"
+											},
+											"queueCount": {
+												"type": "long"
+											},
+											"renewLimit": {
+												"type": "date"
+											}
+										}
+									},
+									"soldQuotas": {
+										"type": "long"
+									},
+									"status": {
+										"type": "long"
+									},
+									"updatedAt": {
+										"type": "date"
+									}
+								}
+							},
+							"restrictedSaleCode": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"soldQuotas": {
+								"type": "long"
+							},
+							"status": {
+								"type": "long"
+							},
+							"unavailableExhibitors": {
+								"type": "text",
+								"fields": {
+									"keyword": {
+										"type": "keyword",
+										"ignore_above": 256
+									}
+								}
+							},
+							"updatedAt": {
+								"type": "date"
+							}
+						}
+					},
+					"siscom_id": {
+						"type": "long"
+					},
+					"soldQuotas": {
+						"type": "long"
+					},
+					"start_time": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"status": {
+						"type": "long"
+					},
+					"updatedAt": {
+						"type": "date"
+					},
+					"updated_at": {
+						"type": "date"
+					}
+				}
+			},
+			"quota_types": {
+				"properties": {
+					"abbr": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"area": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"label": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"priority": {
+						"type": "long"
+					},
+					"required": {
+						"type": "boolean"
+					},
+					"unique": {
+						"type": "boolean"
+					}
+				}
+			},
+			"exhibitors": {
+				"properties": {
+					"name": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					},
+					"state": {
+						"type": "text",
+						"fields": {
+							"keyword": {
+								"type": "keyword",
+								"ignore_above": 256
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

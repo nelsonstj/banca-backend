@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Bom dia Praça / Rede bahia TESTE",
+    "quota_quantity": 2,
+    "priceTable": [
+      {
+        "exhibitor": "SAL",
+        "referenceDate": "2016-10-01T00:00:00.000Z",
+        "monthlyPrice": 4009.5
+      },
+      {
+        "exhibitor": "FEI",
+        "referenceDate": "2016-10-01T00:00:00.000Z",
+        "monthlyPrice": 1155
+      }
+    ],
+    "local_sponsorship": {
+      "program_initials": "FG17",
+      "program_days": "SEG,TER,QUA",
+      "start_time": "11:18",
+      "gender": "CULTURAL",
+      "commercial_scheme": [
+        {
+          "type": "5",
+          "value": 23333333
+        },
+        {
+          "type": "8",
+          "value": 343
+        }
+      ]
+    },
+    "digital_media": {
+      "priceTable": [
+        {
+          "exhibitor": "ES2",
+          "referenceDate": "2016-10-01T00:00:00.000Z",
+          "monthlyPrice": 4009.5
+        },
+        {
+          "exhibitor": "ARI",
+          "referenceDate": "2016-10-01T00:00:00.000Z",
+          "monthlyPrice": 1155
+        }
+      ],
+      "formats": [
+        {
+          "exhibitor": "ES2",
+          "type": "Catálogo de vídeos"
+        },
+        {
+          "exhibitor": "ARI",
+          "type": "Site de programa"
+        }
+      ]
+    },
+    "siscom_data": {
+      "updatedAt": "2017-09-21T17:36:59.288Z",
+      "isAvailable": true,
+      "id": 1018,
+      "status": 2,
+      "purchaseStatus": 2,
+      "marketType": "L",
+      "availabilityStart": "1993-01-01T00:00:00.000Z",
+      "availabilityEnd": "2049-12-31T00:00:00.000Z",
+      "purchaseLimitStart": "2003-02-20T00:00:00.000Z",
+      "purchaseLimitEnd": "2049-12-31T00:00:00.000Z",
+      "programInitials": "JHOJ",
+      "description": "JORNAL HOJE",
+      "restrictedSaleCode": "3",
+      "queueCode": "S",
+      "quotas": [
+        {
+          "availableQuota": [
+            1
+          ],
+          "soldQuota": [],
+          "location": "VIT"
+        },
+        {
+          "availableQuota": [],
+          "soldQuota": [
+            {
+              "number": 1,
+              "clientName": "FACULDADE DE GESTAO E NEGOCIOS / CURSO GRADUACAO/POS-GRADUACAO",
+              "renewLimit": "2017-08-29T00:00:00.000Z",
+              "exhibitionEnd": "2017-09-28T00:00:00.000Z",
+              "exhibitionStart": "2017-07-01T00:00:00.000Z"
+            }
+          ],
+          "location": "ACR"
+        }
+      ],
+      "quotaQuantity": 1,
+      "availableQuotas": 1,
+      "soldQuotas": 0
+    },
+    "attachments": [],
+    "published": true,
+    "updated_at": "2017-07-13T21:31:16.408Z",
+    "main_type": "local_sponsorship"
+  }
+]

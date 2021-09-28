@@ -1,0 +1,82 @@
+{
+ "name": "Modelo Projeto Nacional",
+ "description": "Eu ganhei uma aposta de tapas",
+ "quota_quantity": 5,
+ "quota_items": [
+   { "type": 4, "value": 1234.56, "area": "TV" },
+   { "type": 2, "value": 9876.54, "area": "MD" },
+   { "type": 5, "name": "empresa cross-media 1", "value": 55555.45, "area": "TV" }
+ ],
+ "price_list": {
+   "limit": "2017-05-15T17:55:35.574Z"
+ },
+ "sponsors": [
+   { "name": "Patrocinador1", "market_category": 1},
+   { "name": "Patrocinador2", "market_category": 2}
+ ],
+ "renew_limit_date":"2018-05-29T16:00:00.000Z",
+ "local": {
+   "minimum_quota": 1,
+   "exhibitors":["1", "2", "3"],
+		"quotas": [
+			{
+				"exhibitors":["1", "7"],
+      			"quota_items": [
+      				{"name": "prodtv1", "type": "5", "value": 500, "area": "md" },
+      				{"name": "prodtv1", "type": "1", "value": 550, "area": "md" },
+      				{"name": "prodmd1",	"type": "2", "value": 900, "area": "md" },
+      				{"name": "prodtv1", "type": "4", "value": 600, "area": "md" }
+				]
+			},
+			{
+				"exhibitors":["3", "10"],
+      			"quota_items": [
+      				{"name": "prodtv1", "type": "5", "value": 500, "area": "md" },
+      				{"name": "prodtv1", "type": "1", "value": 550, "area": "md" },
+      				{"name": "prodmd1",	"type": "2", "value": 900, "area": "md" },
+      				{"name": "prodtv1", "type": "4", "value": 600, "area": "md" }
+				]
+			}
+		],
+
+		"type": "2",
+		"associated_to": "event",
+		"program_initials": "aaa111",
+		"exhibition": {
+			"format": "day",
+			"start": "2017-05-01T03:00:00.000Z",
+			"duration": 24
+		},
+		"insertions": [
+			{ "type": "5", "value": 10 },
+			{ "type": "2", "value": 510 }
+		],
+		"support_media": true,
+		"gender": "14",
+		"commercialization_limit": "2017-05-25T15:23:03.815Z",
+		"has_digital_media": true
+ },
+ "digital_media": {
+   "vertical": ["esporte", "asdasd"],
+   "sites": ["site1", "site2", "site3"],
+   "support_media": true,
+   "formats": {
+     "display": {
+       "active": false,
+       "estimated_impressions": 0,
+       "determined_impressions": 0,
+       "total_impressions": 0
+     },
+     "video": {
+       "active": false,
+       "total_views": 0
+     },
+     "content": {
+       "active": false,
+       "total_impact": 0
+     }
+   },
+   "tags": ["tag1", "tag2", "tag3"]
+ }
+
+}

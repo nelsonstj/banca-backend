@@ -1,0 +1,37 @@
+{
+  "name": "testlocalmin",
+  "quota_quantity": 0,
+  "quota_items": [],
+  "price_list": {
+    "limit": null,
+    "fixed_price": false
+  },
+  "sponsors": [],
+  "renew_limit_date": null,
+  "commercialization_limit": null,
+  "published": false,
+  "already_published": false,
+  "holder": "AV7o8ccaW0c1zDVSp4t8",
+  "holder_changed": false,
+  "local": {
+    "minimum_quota": 0,
+    "quota_quantity": 0,
+    "exhibitors": [],
+    "type": "4",
+    "associated_to": "Break",
+    "program_initials": "aaa222",
+    "exhibition": {
+      "format": "unknown",
+      "start": null
+    },
+    "renew_limit_date": null,
+    "quotas": [],
+    "insertions": [{
+      "type": "11",
+      "value": 22
+    }],
+    "support_media": false,
+    "gender": "45",
+    "has_digital_media": false
+  }
+}

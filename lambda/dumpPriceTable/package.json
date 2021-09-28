@@ -1,0 +1,26 @@
+{
+  "name": "banca-jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dumpPriceTable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-es": "^1.5.3",
+    "aws-sdk": "^2.140.0",
+    "elasticsearch": "^13.2.0",
+    "got": "^7.1.0",
+    "http-aws-es": "^2.0.4",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-awslambda": "^0.5.0",
+    "gulp-zip": "^4.0.0"
+  }
+}

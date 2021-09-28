@@ -1,0 +1,17 @@
+{
+  "name": "banca-jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dump_plans.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.90.0",
+    "elasticsearch": "^13.2.0",
+    "got": "^7.1.0",
+    "http-aws-es": "^2.0.4"
+  }
+}

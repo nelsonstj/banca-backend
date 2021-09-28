@@ -1,0 +1,13 @@
+./node_modules
+./lambda
+./test_scripts
+./tests
+./docs
+./docs-scripts
+./gulpfile.js
+./.gitignore
+./package-lock.json
+./gulpfile.js
+./.eslintrc.yml
+./apidoc.json
+./api-documentation
