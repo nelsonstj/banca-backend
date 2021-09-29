@@ -30,7 +30,7 @@ let _createOpportunity = ({ data, product, usercrm }) => {
         isrevenuesystemcalculated: true
     };
     if (prodData['agenciaId'] !== null && prodData['agenciaId'] !== '')
-        opportunityData['tvglobo_agencia@odata.bind'] = cfgCrmGo.webApiUrl + 'accounts(' + prodData['agenciaId'].toUpperCase() + ')';
+        opportunityData['_agencia@odata.bind'] = cfgCrmGo.webApiUrl + 'accounts(' + prodData['agenciaId'].toUpperCase() + ')';
     
     // log.debug("OpportunityController -> createOpportunity opportunityData: " + JSON.stringify(opportunityData));
     let res = [];
@@ -60,7 +60,7 @@ let _createOpportunity = ({ data, product, usercrm }) => {
 let _createOpportunityProduct = ({ data, product, opportunity }) => {
     log.info('OpportunityController -> createOpportunityProduct');
     //log.debug('OpportunityController -> createOpportunityProduct opportunity: ' + JSON.stringify(opportunity));
-    let midiaType = product[0].tvglobo_tipodemidia == "Digital" ? "MD" : "TV";
+    let midiaType = product[0]._tipodemidia == "Digital" ? "MD" : "TV";
     let productData = {
         'opportunityid@odata.bind': cfgCrmGo.webApiUrl + 'opportunities(' + opportunity.opportunityid + ')',
         'productid@odata.bind': 'products(' + product[0].productid + ')',
@@ -75,11 +75,11 @@ let _createOpportunityProduct = ({ data, product, opportunity }) => {
     if (midiaType === 'MD') {
         let periodoDias = Math.ceil(Math.abs((new Date(cnvDateFimString)).getTime() - (new Date(cnvDateIniString)).getTime())/(1000 * 3600 * 24));
         // log.debug("OpportunityController -> periodoDias: " + periodoDias);
-        productData.tvglobo_periododias = periodoDias;
-        productData.tvglobo_dtinicioentrega = cnvDateIniString;
+        productData._periododias = periodoDias;
+        productData._dtinicioentrega = cnvDateIniString;
     } else {
-        productData.tvglobo_periodoexibicao_inicio = cnvDateIniString;
-        productData.tvglobo_periodoexibicao_termino = cnvDateFimString;
+        productData._periodoexibicao_inicio = cnvDateIniString;
+        productData._periodoexibicao_termino = cnvDateFimString;
     }
     // log.debug("CreateOpportunityProduct productData: " + JSON.stringify(productData));
     let res = [];
@@ -114,7 +114,7 @@ let addOpportunityDynamo = (opportunity, product, request) => {
         opportunityid: opportunity.opportunityid,
         name: opportunity.name,
         accountid: opportunity._parentaccountid_value,
-        agencyid: opportunity._tvglobo_agencia_value,
+        agencyid: opportunity._agencia_value,
         opportunityproductid: product.opportunityproductid,
         productid: product._productid_value,
         product_siscomid: request.productId,

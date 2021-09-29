@@ -3,7 +3,7 @@ const _ = require('lodash');
 const AWS = require('aws-sdk');
 AWS.config.update({ region: 'us-east-1', credentials: new AWS.Credentials("???", "???") });
 
-const ES_HOST = 'https://search-bancadev-???.us-east-1.es.amazonaws.com';
+const ES_HOST = 'https://search-bancadev-???';
 
 const SISCOM_HOST = "https://???"; 
 

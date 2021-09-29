@@ -2,7 +2,7 @@ const es = require('elasticsearch');
 const moment = require('moment');
 const _ = require('lodash');
 
-const HOST = "https://search-bancadev-???.us-east-1.es.amazonaws.com";
+const HOST = "https://search-bancadev-???";
 const INDEX = "banca";
 const PROJECT_TYPE = "projects";
 

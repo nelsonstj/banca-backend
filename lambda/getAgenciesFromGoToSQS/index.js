@@ -84,8 +84,8 @@ function getAgenciesFromCRM() {
   let res = [];
   const request = {
     collection: 'accounts',
-    select: ['name', 'accountid', 'tvglobo_situacao'],
-    filter: '_tvglobo_tipoconta_value eq 7d62a70a-029c-42d8-a617-8ed5168e0d02 and statecode eq 0',
+    select: ['name', 'accountid', '_situacao'],
+    filter: '_tipoconta_value eq 7d62a70a-029c-42d8-a617-8ed5168e0d02 and statecode eq 0',
     orderBy: ['name asc'],
     count: true
   };

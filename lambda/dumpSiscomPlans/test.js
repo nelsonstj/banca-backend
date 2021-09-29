@@ -2,7 +2,7 @@ const service = require('./dumpSiscomPlans.js');
 
 service.handler(
   {
-    esHostname: 'https://search-bancadev-???.us-east-1.es.amazonaws.com/',
+    esHostname: 'https://search-bancadev-???',
     page: 1,
     pageSize: 200
   },

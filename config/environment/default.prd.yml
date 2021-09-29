@@ -34,7 +34,7 @@ morgan: common
 
 integracao:
   connectionString: #???
-  queueName: "tvglobo.go.produtobanca"
+  queueName: "produtobanca"
 
 week_days:
   - dom
@@ -48,7 +48,7 @@ week_days:
 # Elasticsearch configurations
 elasticsearch:
   hosts:
-    - search-bancas-prod-???.us-east-1.es.amazonaws.com
+    - search-???
   index: banca
   users:
     index: siscom_users
@@ -73,11 +73,11 @@ aws:
 
 # Attachments configuration (S3)
 attachments:
-  bucket: arquivos.banca.apps.tvglobo.com.br
+  bucket: arquivos.banca
 
 notifications:
-  broadcast_topic: arn:aws:sns:us-east-1:???:banca-prod
-  application: arn:aws:sns:us-east-1:???:app/APNS/banca-prod
+  broadcast_topic: arn:???:banca-prod
+  application: arn:???:app/APNS/banca-prod
   region: us-east-1
 
   msg_templates:
@@ -109,7 +109,7 @@ scheduling:
           cron: '*/30 * * * *'
 
 mobile:
-  bucket: tvg-cdap-bancaprojetos-prod
+  bucket: bancaprojetos-prod
 
 dynamo:
   enviroment: prd
@@ -120,8 +120,8 @@ crmGo:
   tipoPessoaCliente: 5145C4C0-7FA9-4D5D-94BA-A4ABB5C8E1F1
   tipoPessoaAgencia: 7D62A70A-029C-42D8-A617-8ED5168E0D02
   # CRM Organization URL
-  resource: https://tvggo.crm2.dynamics.com
-  webApiUrl: https://tvggo.api.crm2.dynamics.com/api/data/v8.2/
+  resource: https://crm2.dynamics.com
+  webApiUrl: https://api.crm2.dynamics.com/api/data/v8.2/
   # Dynamics 365 Client Id when registered in Azure - PRD
   clientId: #??? # Id do aplicativo
   clientSecret: #??? # chave

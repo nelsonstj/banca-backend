@@ -50,7 +50,7 @@ UserBusiness.prototype.userGetByGroup = function (req) {
 UserBusiness.prototype.getUserCrm = function (reqEmail) {
   log.info('UserBusiness -> getUserCrm');
   return new Promise((resolve, reject) => {
-    userController.getUserCrm(reqEmail) // ('go.servicos.integracao@tvglobo.com.br')
+    userController.getUserCrm(reqEmail)
     .then((result) => {
       this.scope.usercrm = result;
       resolve(this.scope);

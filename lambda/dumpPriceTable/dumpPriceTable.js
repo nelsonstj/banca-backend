@@ -9,7 +9,7 @@ AWS.config.update({
   region: 'us-east-1',
   credentials: new AWS.Credentials(
     '???',
-    '????'
+    '???'
   )
 });
 
@@ -105,13 +105,13 @@ function doWork(address, accessToken, iteratorDate, client, index, limit, cb) {
 }
 
 exports.handler = (event, context, callback) => {
-  const EC2_HOST_NAME = event.ec2Host || 'http://ec2-???.us-west-2.compute.amazonaws.com';
+  const EC2_HOST_NAME = event.ec2Host || 'http://ec2-???';
   const ES_HOST_NAME =
     event.esHost ||
-    'https://search-bancas-prod-???.us-east-1.es.amazonaws.com';
+    'https://search-bancas-prod-???';
   const ENDPOINT = event.endpoint || 'ComercialApps.Apresentacao/api/v1/pricetable';
   const ACCESS_TOKEN =
-    event.accessToken || '????';
+    event.accessToken || '???';
 
   let iteratorDate = moment().startOf('month');
 

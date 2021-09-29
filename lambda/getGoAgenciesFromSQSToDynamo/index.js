@@ -110,7 +110,7 @@ function saveToDynamo(messages) {
         Item: {
           accountid: { S: agency.accountid },
           name: { S: agency.name },
-          status: { S: `${agency.tvglobo_situacao}` },
+          status: { S: `${agency._situacao}` },
           source: { S: 'dynamics365GO' },
           enabled: { BOOL: true }
         }

@@ -3,13 +3,13 @@ let AWS = require("aws-sdk");
 AWS.config.update({
   region: "us-east-1",
   credentials: new AWS.Credentials(
-    "????",
-    "????"
+    "???",
+    "???"
   )
 });
 let sqs = new AWS.SQS({ apiVersion: "2012-11-05" });
 let queueURL =
-  "https://sqs.us-east-1.amazonaws.com/????/fila_dev_banca_dynamicsgo";
+  "https://sqs.???/fila_dev_banca_dynamicsgo";
 
 exports.handler = (event, context, callback) => {
   var params = {

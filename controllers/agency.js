@@ -16,7 +16,7 @@ let _getAllAgencies = () => {
         var request = {
             collection: 'accounts',
                 select: ['name', 'accountid'],
-                filter: '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia +' and statecode eq 0', // agencia
+                filter: '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia +' and statecode eq 0', // agencia
                orderBy: ['name asc'],
                  count: true
         };
@@ -82,7 +82,7 @@ let _getAgencyById = (req) => {
                 select: ['name', 'accountid'],
                 filter: 'name ne null' + 
                         ' and ' + 
-                        '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia + //agencia
+                        '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia + //agencia
                         ' and ' +
                         'accountid eq ' + accountid + ' and statecode eq 0',
                orderBy: ['name asc'],
@@ -124,7 +124,7 @@ let _getAgencyByName = (req) => {
                 select:  ['name', 'accountid'],
                 filter: 'name ne null' + 
                         ' and ' + 
-                        '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia + //agencia
+                        '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaAgencia + //agencia
                         ' and ' +
                         "contains(name, '" + accountName + "') and statecode eq 0 ",
                orderBy: ['name asc'],

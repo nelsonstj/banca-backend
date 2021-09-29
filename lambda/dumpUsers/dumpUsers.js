@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 const fs = require('fs');
 
 const client = require('elasticsearch').Client({
-  hosts: ['https://search-bancas-prod-???.us-east-1.es.amazonaws.com'],
+  hosts: ['https://search-bancas-prod-???'],
   connectionClass: require('http-aws-es'),
   log: 'error'
 });

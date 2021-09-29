@@ -5,7 +5,6 @@ session:
 enable_new_relic: true
 
 siscom:
-  #base_url: https://186.239.238.179
   base_url: http://localhost:4321
 
   encryption_key: #???
@@ -37,7 +36,7 @@ morgan: dev
 
 integracao:
   connectionString: "???"
-  queueName: "???.go.produtobanca"
+  queueName: "???.produtobanca"
 
 week_days:
   - dom
@@ -50,7 +49,7 @@ week_days:
 
 # Elasticsearch configurations
 elasticsearch:
-  hosts: https://search-bancadev-???.us-east-1.es.amazonaws.com/
+  hosts: #???
   index: banca
   users:
     index: siscom_users
@@ -81,11 +80,11 @@ aws:
 
 # Attachments configuration (S3)
 attachments:
-  bucket: tvg-cdap-bancaprojetos-attachments-dev
+  bucket: bancaprojetos-attachments-dev
 
 notifications:
-  broadcast_topic: arn:aws:sns:us-east-1:???:AppBancaProjetos
-  application: arn:aws:sns:us-east-1:???:app/APNS_SANDBOX/banca-dev
+  broadcast_topic: arn:???:AppBancaProjetos
+  application: arn:???:app/APNS_SANDBOX/banca-dev
   region: us-east-1
 
   msg_templates:
@@ -110,7 +109,7 @@ scheduling:
       data:
         API_DUMP_HOSTNAME: #???
         API_FULL_DUMP_USERS_ENDPOINT: /ComercialApps.Apresentacao/api/v1/siscom-users
-        DI_APIKEY: #????
+        DI_APIKEY: #???
       options:
         jobId: user_dump
         repeat:
@@ -120,14 +119,14 @@ scheduling:
       data:
         API_DUMP_HOSTNAME: #???
         API_FULL_DUMP_ENDPOINT: /ComercialApps.Apresentacao/api/v1/plans/full
-        DI_APIKEY: #????
+        DI_APIKEY: #???
       options:
         jobId: plans_dump
         repeat:
           cron: '*/30 * * * *'
 
 mobile:
-  bucket: tvg-cdap-bancaprojetos-dev
+  bucket: bancaprojetos-dev
 
 dynamo:
   enviroment: dev
@@ -139,8 +138,8 @@ crmGo:
   tipoPessoaAgencia: 7D62A70A-029C-42D8-A617-8ED5168E0D02
   #enviromentDynamo: dev
   #CRM Organization URL - HML
-  resource: https://tvggohomolog.crm.dynamics.com
-  webApiUrl: https://tvggohomolog.api.crm.dynamics.com/api/data/v8.2/
+  resource: https://homolog.crm.dynamics.com
+  webApiUrl: https://homolog.api.crm.dynamics.com/api/data/v8.2/
   #Dynamics 365 Client Id when registered in Azure - HML
   clientId: #???
   clientSecret: #???
@@ -149,8 +148,8 @@ crmGo:
   uoms: d84a42ad-56a6-4196-892f-556422b407d2 #unidade de medida principal - HML
   pricelevelId: A0741EE0-FDA9-E711-810F-E0071B714BD1 #lista de preços padrão - HML
   #CRM Organization URL - DEV
-  #resource: https://tvggodev.crm.dynamics.com
-  #webApiUrl: https://tvggodev.api.crm.dynamics.com/api/data/v8.2/ #DEV
+  #resource: https://dev.crm.dynamics.com
+  #webApiUrl: https://dev.api.crm.dynamics.com/api/data/v8.2/ #DEV
   #Dynamics 365 Client Id when registered in Azure - DEV
   #clientId: #???
   #clientSecret: #???

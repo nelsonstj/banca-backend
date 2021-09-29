@@ -37,7 +37,7 @@ function insertUsers(users, client) {
 exports.handler = (context, event, callback) => getUsers()
   .then((data) => {
     const client = require('elasticsearch').Client({
-      hosts: ['https://search-bancadev-???.us-east-1.es.amazonaws.com'],
+      hosts: ['https://search-bancadev-???'],
       connectionClass: require('http-aws-es'),
       log: 'error'
     });

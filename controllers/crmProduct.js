@@ -15,7 +15,7 @@ let _getAllProducts = () => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'products',
-              // select: ['name', 'productid', 'tvglobo_formato', 'productnumber', 'tvglobo_expirado', 'tvglobo_tipodemidia', '_pricelevelid_value'],
+              // select: ['name', 'productid', '_formato', 'productnumber', '_expirado', '_tipodemidia', '_pricelevelid_value'],
                 filter: 'statecode eq 0',
                orderBy: ['name asc'],
                    top: 100
@@ -48,9 +48,9 @@ let _getProductById = (req) => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'products',
-              // select: ['name', 'productid', 'tvglobo_formato', 'productnumber', 'tvglobo_expirado', 'tvglobo_tipodemidia', '_pricelevelid_value'],
+              // select: ['name', 'productid', '_formato', 'productnumber', '_expirado', '_tipodemidia', '_pricelevelid_value'],
               // filter: 'productid eq ' + productid + ' and statecode eq 0',
-                filter: 'tvglobo_idsiscomprograma eq ' + productid + ' and statecode eq 0',
+                filter: '_idsiscomprograma eq ' + productid + ' and statecode eq 0',
                  count: true
         };
         crmGo.dynamicsWebApi.retrieveRequest(request).then(records => {
@@ -84,7 +84,7 @@ let _getProductByName = (req) => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'products',
-                // select: ['name', 'productid', 'tvglobo_formato', 'productnumber', 'tvglobo_expirado', 'tvglobo_tipodemidia', '_pricelevelid_value'],
+                // select: ['name', 'productid', '_formato', 'productnumber', '_expirado', '_tipodemidia', '_pricelevelid_value'],
                 filter: 'name ne null' + 
                         ' and ' +
                         "contains(name, '" + product + "') and statecode eq 0 ",
@@ -123,9 +123,9 @@ let _getProductToOpportunity = (productId) => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'products',
-              // select: ['name', 'productid', 'tvglobo_formato', 'productnumber', 'tvglobo_expirado', 'tvglobo_tipodemidia', '_pricelevelid_value'],
+              // select: ['name', 'productid', '_formato', 'productnumber', '_expirado', '_tipodemidia', '_pricelevelid_value'],
               // filter: 'productid eq ' + productid + ' and statecode eq 0',
-              filter: 'tvglobo_idsiscomprograma eq ' + prodSisComId + ' and statecode eq 0',
+              filter: '_idsiscomprograma eq ' + prodSisComId + ' and statecode eq 0',
               count: true
         };
         crmGo.dynamicsWebApi.retrieveRequest(request).then(records => {

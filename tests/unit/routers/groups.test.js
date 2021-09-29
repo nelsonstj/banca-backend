@@ -22,10 +22,10 @@ describe('Groups', () => {
         // Gets authorizations for a user in a tv group and a digital media group.
         // If the groups area changes any tests may return 403(forbidden), in this case, define another users
         function getAuthTv() {
-            return axios.post(`${url}/login`, {"username": "eduardo.giannotto","password": "Sis.com1"});
+            return axios.post(`${url}/login`, {"username": "teste","password": "teste"});
         }
         function getAuthDigitalMedia() {
-            return axios.post(`${url}/login`, {"username": "rodrigo.mynssen","password": "globo"});
+            return axios.post(`${url}/login`, {"username": "teste","password": "teste"});
         }
 
         axios.all([getAuthTv(), getAuthDigitalMedia()])

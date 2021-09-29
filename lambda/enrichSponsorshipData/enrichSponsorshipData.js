@@ -12,7 +12,7 @@ AWS.config.update({
   )
 });
 
-const hostName = 'https://search-bancadev-???.us-east-1.es.amazonaws.com';
+const hostName = 'https://search-bancadev-???';
 const UNAVAILABLE_STATUS = 2;
 const BANCA_INDEX = 'banca';
 

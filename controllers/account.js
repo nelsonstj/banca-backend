@@ -19,7 +19,7 @@ let _getAllAccounts = () => {
                 select: ['name', 'accountid'],
                 filter: 'name ne null' + 
                         ' and ' + 
-                        '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
+                        '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
                         ' and ' + 
                         'statecode eq 0',
                orderBy: ['name asc'],
@@ -59,9 +59,9 @@ let _getAllProspects = () => {
                 select: ['name', 'accountid'],
                 filter: 'name ne null' + 
                         ' and ' + 
-                        '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
+                        '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
                         ' and ' + 
-                        'tvglobo_situacao eq 435450000 and statecode eq 0',
+                        '_situacao eq 435450000 and statecode eq 0',
                         //435450000 = prospecção; 435450001 = ativo; 435450002 = inativo; 
                orderBy: ['name asc'],
                  count: true
@@ -146,7 +146,7 @@ let _getAccountById = (req) => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'accounts',
-                select: ['name', 'accountid', 'tvglobo_situacao', '_tvglobo_tipoconta_value'],
+                select: ['name', 'accountid', '_situacao', '_tipoconta_value'],
                 filter: 'accountid eq ' + accountid + ' and statecode eq 0',
                orderBy: ['name asc'],
                  count: true
@@ -179,10 +179,10 @@ let _getAccountsByName = (req) => {
     return new Promise((resolve, reject) => {
         var request = {
             collection: 'accounts',
-                //select: ['name', 'accountid', 'tvglobo_situacao'],
+                //select: ['name', 'accountid', '_situacao'],
                 filter: 'name ne null' + 
                         ' and ' + 
-                        '_tvglobo_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
+                        '_tipoconta_value eq '+ cfgCrmGo.tipoPessoaCliente + //cliente
                         ' and ' +
                         "contains(name, '" + account + "') and statecode eq 0 ",
                orderBy: ['name asc'],

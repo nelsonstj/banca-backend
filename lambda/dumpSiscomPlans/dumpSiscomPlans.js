@@ -11,10 +11,10 @@ AWS.config.update({
   )
 });
 
-const ES_HOSTNAME = 'https://search-bancas-prod-???.us-east-1.es.amazonaws.com';
+const ES_HOSTNAME = 'https://search-bancas-prod-???';
 const SISCOM_API_HOSTNAME = 'https://???';
 const SISCOM_PLANS_ENDPOINT = 'api/v1/plans/availability';
-const SISCOM_API_KEY = '????';
+const SISCOM_API_KEY = '???';
 const ES_SISCOM_PLAN_INDEX = 'siscom_plans';
 const ES_SISCOM_PLAN_TYPE = 'siscom_plan';
 const PAGE_SIZE = 100;

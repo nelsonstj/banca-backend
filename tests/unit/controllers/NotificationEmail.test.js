@@ -12,7 +12,7 @@ describe("Notification Email", () => {
                 "owner": "Grupo de testes",
                 "projectName": "Projeto de testes",
                 "users": [
-                    "matheus.ferreira@tvglobo.com.br"
+                    "email@email.com.br"
                 ]
             });
         });

@@ -2,14 +2,14 @@
   "General": {
     "crmGo": {
       "authorityUrl": "https://login.microsoftonline.com/???/oauth2/token",
-      "resource": "https://tvggodev.crm.dynamics.com",
+      "resource": "https://dev.crm.dynamics.com",
       "clientId": "???",
       "clientSecret": "???",
-      "webApiUrl": "https://tvggodev.api.crm.dynamics.com/api/data/v8.2/",
+      "webApiUrl": "https://dev.api.crm.dynamics.com/api/data/v8.2/",
       "impersonate": "???"
     },
     "SQS": {
-      "queueUrl": "https://sqs.us-east-1.amazonaws.com/???/fila_dev_banca_dynamicsgo"
+      "queueUrl": "https://sqs.???/fila_dev_banca_dynamicsgo"
     },
     "environment": "dev"
   }

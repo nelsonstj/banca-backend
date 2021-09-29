@@ -9,7 +9,7 @@ AWS.config.update({
 /*const ddb = new AWS.DynamoDB.DocumentClient();
 const sns = new AWS.SNS();*/
 let sqs = new AWS.SQS({ apiVersion: "2012-11-05" });
-let sqsQueueURL = "https://sqs.us-east-1.amazonaws.com/???/fila_dev_banca_dynamicsgo";
+let sqsQueueURL = "https://sqs.???/fila_dev_banca_dynamicsgo";
 
 function doWork() {
   sqs

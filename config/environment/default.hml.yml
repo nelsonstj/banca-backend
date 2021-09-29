@@ -3,8 +3,7 @@ session:
   expiration: '1 day'
 
 siscom:
-  #base_url: https://186.239.238.179
-  base_url: https://200.208.24.73
+  base_url: #???
   encryption_key: #???
   encryption_algorithm: aes-256-cbc
 
@@ -44,17 +43,17 @@ morgan: combined
 
 integracao:
   connectionString: "???"
-  queueName: "tvglobo.go.produtobanca"
+  queueName: "produtobanca"
 
 group:
   upload:
-    id: AVynMWP90r3lkoFo1x7Z
+    id: #???
   affiliate: [AVynCaHP0r3lkoFo1x7K, AWF14pFxE50PSDSmK-p-]
 
 # Elasticsearch configurations
 elasticsearch:
   hosts:
-    - https://search-search-bancahomolog-???.us-east-1.es.amazonaws.com
+    - https://???
   index: banca
   users:
     index: siscom_users
@@ -77,12 +76,12 @@ aws:
 
 # Attachments configuration (S3)
 attachments:
-  bucket: tvg-cdap-bancaprojetos-attachments-h
+  bucket: bancaprojetos-attachments-h
 
 # Push notifications configurations
 notifications:
-  broadcast_topic: arn:aws:sns:us-east-1:???:banca-homolog
-  application: arn:aws:sns:us-east-1:???:app/APNS/banca-homolog 
+  broadcast_topic: arn:???:banca-homolog
+  application: arn:???:app/APNS/banca-homolog 
   region: us-east-1
 
   msg_templates:
@@ -114,7 +113,7 @@ scheduling:
           cron: '*/30 * * * *'
 
 mobile:
-  bucket: tvg-cdap-bancaprojetos-homolog
+  bucket: homolog
 
 dynamo:
   enviroment: hml
@@ -125,8 +124,8 @@ crmGo:
   tipoPessoaCliente: 5145C4C0-7FA9-4D5D-94BA-A4ABB5C8E1F1
   tipoPessoaAgencia: 7D62A70A-029C-42D8-A617-8ED5168E0D02
   # CRM Organization URL
-  resource: https://tvggohomolog.crm.dynamics.com
-  webApiUrl: https://tvggohomolog.api.crm.dynamics.com/api/data/v8.2/
+  resource: https://homolog.crm.dynamics.com
+  webApiUrl: https://homolog.api.crm.dynamics.com/api/data/v8.2/
   # Dynamics 365 Client Id when registered in Azure - HML
   clientId: #???
   clientSecret: #???
