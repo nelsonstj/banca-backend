@@ -10,8 +10,8 @@
     "elasticsearch": "^14.0.0",
     "got": "^7.1.0",
     "http-aws-es": "^2.0.5",
-    "lodash": "^4.17.4",
-    "moment": "^2.19.1"
+    "lodash": "^4.17.21",
+    "moment": "^2.19.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
